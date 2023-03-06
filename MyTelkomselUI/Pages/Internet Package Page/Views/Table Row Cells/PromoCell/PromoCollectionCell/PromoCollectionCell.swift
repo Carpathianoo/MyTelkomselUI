@@ -24,8 +24,10 @@ class PromoCollectionCell: UICollectionViewCell {
     
     func setupCell() {
         promoTitle.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        promoImage.layer.borderColor = UIColor.black.cgColor
-        promoImage.layer.borderWidth = 1
+//        promoImage.layer.borderColor = UIColor.black.cgColor
+//        promoImage.layer.borderWidth = 1
+        
+        self.backView.layer.cornerRadius = 4
     }
 
 }

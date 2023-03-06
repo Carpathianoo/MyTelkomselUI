@@ -36,7 +36,7 @@ class PackageCollectionCell: UICollectionViewCell {
     func setupBackView() {
         backView.layer.cornerRadius = 4
         backView.layer.borderWidth = 1
-        backView.layer.borderColor = UIColor.black.cgColor
+        backView.layer.borderColor = UIColor.systemGray4.cgColor
     }
     
     func setupHargaDiskon() {

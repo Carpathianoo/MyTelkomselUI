@@ -18,11 +18,14 @@ class HeaderCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.lihatSemuaButton.titleLabel?.textColor = .systemRed
+        self.lihatSemuaButton.titleLabel?.font = .systemFont(ofSize: 14, weight: .medium)
     }
 
     func setupHeaderCell(title: String, hideShowAllButton: Bool){
         self.title.text = title
         self.title.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+
         lihatSemuaButton.isHidden = hideShowAllButton
     }
     

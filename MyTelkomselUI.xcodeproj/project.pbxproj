@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6EF25C529B6403500592073 /* PackageDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25C329B6403500592073 /* PackageDetailController.swift */; };
+		C6EF25C629B6403500592073 /* PackageDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25C429B6403500592073 /* PackageDetailController.xib */; };
+		C6EF25D229B6436600592073 /* HargaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25D029B6436600592073 /* HargaTableCell.swift */; };
+		C6EF25D329B6436600592073 /* HargaTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25D129B6436600592073 /* HargaTableCell.xib */; };
 		C6FD2B2429B59ACF0008194C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B2329B59ACF0008194C /* AppDelegate.swift */; };
 		C6FD2B2629B59ACF0008194C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B2529B59ACF0008194C /* SceneDelegate.swift */; };
 		C6FD2B2829B59ACF0008194C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B2729B59ACF0008194C /* ViewController.swift */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6EF25C329B6403500592073 /* PackageDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetailController.swift; sourceTree = "<group>"; };
+		C6EF25C429B6403500592073 /* PackageDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PackageDetailController.xib; sourceTree = "<group>"; };
+		C6EF25D029B6436600592073 /* HargaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HargaTableCell.swift; sourceTree = "<group>"; };
+		C6EF25D129B6436600592073 /* HargaTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HargaTableCell.xib; sourceTree = "<group>"; };
 		C6FD2B2029B59ACF0008194C /* MyTelkomselUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTelkomselUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FD2B2329B59ACF0008194C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FD2B2529B59ACF0008194C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +77,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6EF25C729B640AF00592073 /* Harga Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C6EF25D029B6436600592073 /* HargaTableCell.swift */,
+				C6EF25D129B6436600592073 /* HargaTableCell.xib */,
+			);
+			path = "Harga Cell";
+			sourceTree = "<group>";
+		};
+		C6EF25C829B640DE00592073 /* Masa Aktif Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Masa Aktif Cell";
+			sourceTree = "<group>";
+		};
+		C6EF25C929B640EF00592073 /* Rincian Paket Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Rincian Paket Cell";
+			sourceTree = "<group>";
+		};
+		C6EF25CA29B640FF00592073 /* Deskripsi Paket Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Deskripsi Paket Cell";
+			sourceTree = "<group>";
+		};
+		C6EF25CB29B6410D00592073 /* Beli Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Beli Cell";
+			sourceTree = "<group>";
+		};
 		C6FD2B1729B59ACF0008194C = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +222,11 @@
 		C6FD2B4229B5A0300008194C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C6EF25C729B640AF00592073 /* Harga Cell */,
+				C6EF25C829B640DE00592073 /* Masa Aktif Cell */,
+				C6EF25C929B640EF00592073 /* Rincian Paket Cell */,
+				C6EF25CA29B640FF00592073 /* Deskripsi Paket Cell */,
+				C6EF25CB29B6410D00592073 /* Beli Cell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +234,8 @@
 		C6FD2B4329B5A0360008194C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C6EF25C329B6403500592073 /* PackageDetailController.swift */,
+				C6EF25C429B6403500592073 /* PackageDetailController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -384,8 +436,10 @@
 				C6FD2B5629B5A6EA0008194C /* HeaderCell.xib in Resources */,
 				C6FD2B3029B59AD10008194C /* LaunchScreen.storyboard in Resources */,
 				C6FD2B7B29B5EECD0008194C /* VoucherCollectionCell.xib in Resources */,
+				C6EF25C629B6403500592073 /* PackageDetailController.xib in Resources */,
 				C6FD2B2D29B59AD10008194C /* Assets.xcassets in Resources */,
 				C6FD2B6C29B5D7180008194C /* PackageCollectionCell.xib in Resources */,
+				C6EF25D329B6436600592073 /* HargaTableCell.xib in Resources */,
 				C6FD2B2B29B59ACF0008194C /* Main.storyboard in Resources */,
 				C6FD2B4929B5A2080008194C /* InternetPackageController.xib in Resources */,
 				C6FD2B6529B5C6370008194C /* PromoCollectionCell.xib in Resources */,
@@ -405,9 +459,11 @@
 				C6FD2B4829B5A2080008194C /* InternetPackageController.swift in Sources */,
 				C6FD2B7129B5E8870008194C /* DirumahAjaTableCell.swift in Sources */,
 				C6FD2B2829B59ACF0008194C /* ViewController.swift in Sources */,
+				C6EF25C529B6403500592073 /* PackageDetailController.swift in Sources */,
 				C6FD2B2429B59ACF0008194C /* AppDelegate.swift in Sources */,
 				C6FD2B6029B5C5DD0008194C /* PromoTableCell.swift in Sources */,
 				C6FD2B6B29B5D7180008194C /* PackageCollectionCell.swift in Sources */,
+				C6EF25D229B6436600592073 /* HargaTableCell.swift in Sources */,
 				C6FD2B2629B59ACF0008194C /* SceneDelegate.swift in Sources */,
 				C6FD2B6F29B5E6D20008194C /* PopularTableCell.swift in Sources */,
 				C6FD2B6429B5C6370008194C /* PromoCollectionCell.swift in Sources */,

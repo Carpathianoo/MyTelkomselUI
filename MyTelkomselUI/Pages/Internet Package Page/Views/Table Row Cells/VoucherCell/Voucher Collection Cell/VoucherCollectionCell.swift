@@ -20,10 +20,16 @@ class VoucherCollectionCell: UICollectionViewCell {
     }
     
     func setupCell() {
-        self.contentView.layer.borderColor = UIColor.black.cgColor
-        self.contentView.layer.borderWidth = 1
+//        self.contentView.layer.borderColor = UIColor.black.cgColor
+//        self.contentView.layer.borderWidth = 1
         self.contentView.layer.cornerRadius = 4
-        
+        self.contentView.layer.masksToBounds = true
+        layer.masksToBounds = false
+        layer.shadowOpacity = 0.3
+        layer.shadowRadius = 4
+        layer.shadowOffset = CGSize(width: 2, height: 2)
+        layer.shadowColor = UIColor.black.cgColor
+
     }
     
     
