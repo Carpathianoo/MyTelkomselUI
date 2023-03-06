@@ -13,6 +13,22 @@
 		C6FD2B2B29B59ACF0008194C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B2929B59ACF0008194C /* Main.storyboard */; };
 		C6FD2B2D29B59AD10008194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B2C29B59AD10008194C /* Assets.xcassets */; };
 		C6FD2B3029B59AD10008194C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B2E29B59AD10008194C /* LaunchScreen.storyboard */; };
+		C6FD2B3C29B59BC50008194C /* ColorPallette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B3B29B59BC50008194C /* ColorPallette.swift */; };
+		C6FD2B4829B5A2080008194C /* InternetPackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B4629B5A2080008194C /* InternetPackageController.swift */; };
+		C6FD2B4929B5A2080008194C /* InternetPackageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B4729B5A2080008194C /* InternetPackageController.xib */; };
+		C6FD2B5529B5A6EA0008194C /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B5329B5A6EA0008194C /* HeaderCell.swift */; };
+		C6FD2B5629B5A6EA0008194C /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B5429B5A6EA0008194C /* HeaderCell.xib */; };
+		C6FD2B6029B5C5DD0008194C /* PromoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B5F29B5C5DD0008194C /* PromoTableCell.swift */; };
+		C6FD2B6429B5C6370008194C /* PromoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B6229B5C6370008194C /* PromoCollectionCell.swift */; };
+		C6FD2B6529B5C6370008194C /* PromoCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B6329B5C6370008194C /* PromoCollectionCell.xib */; };
+		C6FD2B6729B5D5DC0008194C /* LanggananTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B6629B5D5DC0008194C /* LanggananTableCell.swift */; };
+		C6FD2B6B29B5D7180008194C /* PackageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B6929B5D7180008194C /* PackageCollectionCell.swift */; };
+		C6FD2B6C29B5D7180008194C /* PackageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B6A29B5D7180008194C /* PackageCollectionCell.xib */; };
+		C6FD2B6F29B5E6D20008194C /* PopularTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B6E29B5E6D20008194C /* PopularTableCell.swift */; };
+		C6FD2B7129B5E8870008194C /* DirumahAjaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B7029B5E8870008194C /* DirumahAjaTableCell.swift */; };
+		C6FD2B7629B5EE9F0008194C /* VoucherTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B7529B5EE9F0008194C /* VoucherTableCell.swift */; };
+		C6FD2B7A29B5EECD0008194C /* VoucherCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B7829B5EECD0008194C /* VoucherCollectionCell.swift */; };
+		C6FD2B7B29B5EECD0008194C /* VoucherCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B7929B5EECD0008194C /* VoucherCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +40,22 @@
 		C6FD2B2C29B59AD10008194C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6FD2B2F29B59AD10008194C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6FD2B3129B59AD10008194C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6FD2B3B29B59BC50008194C /* ColorPallette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallette.swift; sourceTree = "<group>"; };
+		C6FD2B4629B5A2080008194C /* InternetPackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetPackageController.swift; sourceTree = "<group>"; };
+		C6FD2B4729B5A2080008194C /* InternetPackageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InternetPackageController.xib; sourceTree = "<group>"; };
+		C6FD2B5329B5A6EA0008194C /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		C6FD2B5429B5A6EA0008194C /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		C6FD2B5F29B5C5DD0008194C /* PromoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTableCell.swift; sourceTree = "<group>"; };
+		C6FD2B6229B5C6370008194C /* PromoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCollectionCell.swift; sourceTree = "<group>"; };
+		C6FD2B6329B5C6370008194C /* PromoCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoCollectionCell.xib; sourceTree = "<group>"; };
+		C6FD2B6629B5D5DC0008194C /* LanggananTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanggananTableCell.swift; sourceTree = "<group>"; };
+		C6FD2B6929B5D7180008194C /* PackageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCollectionCell.swift; sourceTree = "<group>"; };
+		C6FD2B6A29B5D7180008194C /* PackageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PackageCollectionCell.xib; sourceTree = "<group>"; };
+		C6FD2B6E29B5E6D20008194C /* PopularTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableCell.swift; sourceTree = "<group>"; };
+		C6FD2B7029B5E8870008194C /* DirumahAjaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirumahAjaTableCell.swift; sourceTree = "<group>"; };
+		C6FD2B7529B5EE9F0008194C /* VoucherTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherTableCell.swift; sourceTree = "<group>"; };
+		C6FD2B7829B5EECD0008194C /* VoucherCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherCollectionCell.swift; sourceTree = "<group>"; };
+		C6FD2B7929B5EECD0008194C /* VoucherCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,9 @@
 		C6FD2B2229B59ACF0008194C /* MyTelkomselUI */ = {
 			isa = PBXGroup;
 			children = (
+				C6FD2B3729B59B120008194C /* Model */,
+				C6FD2B3929B59B3A0008194C /* Extension */,
+				C6FD2B3829B59B180008194C /* Pages */,
 				C6FD2B2329B59ACF0008194C /* AppDelegate.swift */,
 				C6FD2B2529B59ACF0008194C /* SceneDelegate.swift */,
 				C6FD2B2729B59ACF0008194C /* ViewController.swift */,
@@ -65,6 +100,227 @@
 				C6FD2B3129B59AD10008194C /* Info.plist */,
 			);
 			path = MyTelkomselUI;
+			sourceTree = "<group>";
+		};
+		C6FD2B3729B59B120008194C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6FD2B3829B59B180008194C /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B3F29B59CCD0008194C /* Internet Package Page */,
+				C6FD2B3E29B59CC10008194C /* Package Detail Page */,
+				C6FD2B3D29B59C400008194C /* Successful Transaction Page */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		C6FD2B3929B59B3A0008194C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B3B29B59BC50008194C /* ColorPallette.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C6FD2B3D29B59C400008194C /* Successful Transaction Page */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B4529B5A0430008194C /* Controllers */,
+				C6FD2B4429B5A03C0008194C /* Views */,
+			);
+			path = "Successful Transaction Page";
+			sourceTree = "<group>";
+		};
+		C6FD2B3E29B59CC10008194C /* Package Detail Page */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B4329B5A0360008194C /* Controllers */,
+				C6FD2B4229B5A0300008194C /* Views */,
+			);
+			path = "Package Detail Page";
+			sourceTree = "<group>";
+		};
+		C6FD2B3F29B59CCD0008194C /* Internet Package Page */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B7229B5EDFA0008194C /* New Group */,
+				C6FD2B4129B5A01E0008194C /* Controllers */,
+				C6FD2B4029B5A00E0008194C /* Views */,
+			);
+			path = "Internet Package Page";
+			sourceTree = "<group>";
+		};
+		C6FD2B4029B5A00E0008194C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B7329B5EE290008194C /* Reusable */,
+				C6FD2B4D29B5A66A0008194C /* Table Row Cells */,
+				C6FD2B4C29B5A6630008194C /* Table Header Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6FD2B4129B5A01E0008194C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B4629B5A2080008194C /* InternetPackageController.swift */,
+				C6FD2B4729B5A2080008194C /* InternetPackageController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C6FD2B4229B5A0300008194C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6FD2B4329B5A0360008194C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C6FD2B4429B5A03C0008194C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6FD2B4529B5A0430008194C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C6FD2B4C29B5A6630008194C /* Table Header Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B5329B5A6EA0008194C /* HeaderCell.swift */,
+				C6FD2B5429B5A6EA0008194C /* HeaderCell.xib */,
+			);
+			path = "Table Header Cells";
+			sourceTree = "<group>";
+		};
+		C6FD2B4D29B5A66A0008194C /* Table Row Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B5729B5AD230008194C /* PromoCell */,
+				C6FD2B5829B5AD640008194C /* LanggananCell */,
+				C6FD2B5929B5AD730008194C /* PopularCell */,
+				C6FD2B5A29B5AD8E0008194C /* VoucherCell */,
+				C6FD2B5B29B5ADA00008194C /* DirumahAjaCell */,
+			);
+			path = "Table Row Cells";
+			sourceTree = "<group>";
+		};
+		C6FD2B5729B5AD230008194C /* PromoCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B6129B5C5E20008194C /* PromoCollectionCell */,
+				C6FD2B5F29B5C5DD0008194C /* PromoTableCell.swift */,
+			);
+			path = PromoCell;
+			sourceTree = "<group>";
+		};
+		C6FD2B5829B5AD640008194C /* LanggananCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B5E29B5B4700008194C /* RowCell */,
+			);
+			path = LanggananCell;
+			sourceTree = "<group>";
+		};
+		C6FD2B5929B5AD730008194C /* PopularCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B6E29B5E6D20008194C /* PopularTableCell.swift */,
+			);
+			path = PopularCell;
+			sourceTree = "<group>";
+		};
+		C6FD2B5A29B5AD8E0008194C /* VoucherCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B7729B5EEA70008194C /* Voucher Collection Cell */,
+				C6FD2B7529B5EE9F0008194C /* VoucherTableCell.swift */,
+			);
+			path = VoucherCell;
+			sourceTree = "<group>";
+		};
+		C6FD2B5B29B5ADA00008194C /* DirumahAjaCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B7029B5E8870008194C /* DirumahAjaTableCell.swift */,
+			);
+			path = DirumahAjaCell;
+			sourceTree = "<group>";
+		};
+		C6FD2B5E29B5B4700008194C /* RowCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B6829B5D6EA0008194C /* LanggananCollectionCell */,
+				C6FD2B6629B5D5DC0008194C /* LanggananTableCell.swift */,
+			);
+			path = RowCell;
+			sourceTree = "<group>";
+		};
+		C6FD2B6129B5C5E20008194C /* PromoCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B6229B5C6370008194C /* PromoCollectionCell.swift */,
+				C6FD2B6329B5C6370008194C /* PromoCollectionCell.xib */,
+			);
+			path = PromoCollectionCell;
+			sourceTree = "<group>";
+		};
+		C6FD2B6829B5D6EA0008194C /* LanggananCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LanggananCollectionCell;
+			sourceTree = "<group>";
+		};
+		C6FD2B6D29B5E5530008194C /* Package Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B6929B5D7180008194C /* PackageCollectionCell.swift */,
+				C6FD2B6A29B5D7180008194C /* PackageCollectionCell.xib */,
+			);
+			path = "Package Collection Cell";
+			sourceTree = "<group>";
+		};
+		C6FD2B7229B5EDFA0008194C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		C6FD2B7329B5EE290008194C /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B6D29B5E5530008194C /* Package Collection Cell */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		C6FD2B7729B5EEA70008194C /* Voucher Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B7829B5EECD0008194C /* VoucherCollectionCell.swift */,
+				C6FD2B7929B5EECD0008194C /* VoucherCollectionCell.xib */,
+			);
+			path = "Voucher Collection Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +381,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FD2B5629B5A6EA0008194C /* HeaderCell.xib in Resources */,
 				C6FD2B3029B59AD10008194C /* LaunchScreen.storyboard in Resources */,
+				C6FD2B7B29B5EECD0008194C /* VoucherCollectionCell.xib in Resources */,
 				C6FD2B2D29B59AD10008194C /* Assets.xcassets in Resources */,
+				C6FD2B6C29B5D7180008194C /* PackageCollectionCell.xib in Resources */,
 				C6FD2B2B29B59ACF0008194C /* Main.storyboard in Resources */,
+				C6FD2B4929B5A2080008194C /* InternetPackageController.xib in Resources */,
+				C6FD2B6529B5C6370008194C /* PromoCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +399,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FD2B7A29B5EECD0008194C /* VoucherCollectionCell.swift in Sources */,
+				C6FD2B6729B5D5DC0008194C /* LanggananTableCell.swift in Sources */,
+				C6FD2B7629B5EE9F0008194C /* VoucherTableCell.swift in Sources */,
+				C6FD2B4829B5A2080008194C /* InternetPackageController.swift in Sources */,
+				C6FD2B7129B5E8870008194C /* DirumahAjaTableCell.swift in Sources */,
 				C6FD2B2829B59ACF0008194C /* ViewController.swift in Sources */,
 				C6FD2B2429B59ACF0008194C /* AppDelegate.swift in Sources */,
+				C6FD2B6029B5C5DD0008194C /* PromoTableCell.swift in Sources */,
+				C6FD2B6B29B5D7180008194C /* PackageCollectionCell.swift in Sources */,
 				C6FD2B2629B59ACF0008194C /* SceneDelegate.swift in Sources */,
+				C6FD2B6F29B5E6D20008194C /* PopularTableCell.swift in Sources */,
+				C6FD2B6429B5C6370008194C /* PromoCollectionCell.swift in Sources */,
+				C6FD2B3C29B59BC50008194C /* ColorPallette.swift in Sources */,
+				C6FD2B5529B5A6EA0008194C /* HeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +567,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +596,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
