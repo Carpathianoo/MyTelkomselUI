@@ -50,7 +50,7 @@ extension PromoTableCell: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: promoCollection.frame.width / 1.6, height: promoCollection.frame.height / 1.3)
+        return CGSize(width: promoCollection.frame.width / 1.4, height: promoCollection.frame.height / 1.2)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="DeskripsiPaketCell" customModule="MyTelkomselUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNd-Ox-F1m">
+                        <rect key="frame" x="0.0" y="10" width="320" height="149"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deskripsi Paket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLB-Vo-r5Z">
+                                <rect key="frame" x="16" y="15.999999999999998" width="112" height="19.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19.333333333333329" id="wRJ-I2-4zR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label HAWUIDH AWUHDIUAWHD WAHDIAUWHD IUAHW DIAHW DIAWHDUI AW" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmP-F9-8di">
+                                <rect key="frame" x="16" y="45" width="288" height="88"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iLB-Vo-r5Z" firstAttribute="top" secondItem="vNd-Ox-F1m" secondAttribute="top" constant="16" id="32x-a5-R1Z"/>
+                            <constraint firstItem="KmP-F9-8di" firstAttribute="top" secondItem="iLB-Vo-r5Z" secondAttribute="bottom" constant="9.6699999999999999" id="7Cn-nE-Wsj"/>
+                            <constraint firstItem="KmP-F9-8di" firstAttribute="leading" secondItem="vNd-Ox-F1m" secondAttribute="leading" constant="16" id="Ikc-jP-yW0"/>
+                            <constraint firstAttribute="trailing" secondItem="KmP-F9-8di" secondAttribute="trailing" constant="16" id="JeL-jK-xQ9"/>
+                            <constraint firstItem="iLB-Vo-r5Z" firstAttribute="leading" secondItem="vNd-Ox-F1m" secondAttribute="leading" constant="16" id="XcY-oS-G3c"/>
+                            <constraint firstAttribute="bottom" secondItem="KmP-F9-8di" secondAttribute="bottom" constant="16" id="pI3-aN-pkQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                <constraints>
+                    <constraint firstItem="vNd-Ox-F1m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5qN-S2-eZL"/>
+                    <constraint firstAttribute="bottom" secondItem="vNd-Ox-F1m" secondAttribute="bottom" id="X2k-FJ-Crj"/>
+                    <constraint firstItem="vNd-Ox-F1m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lrs-eR-CRZ"/>
+                    <constraint firstAttribute="trailing" secondItem="vNd-Ox-F1m" secondAttribute="trailing" id="saF-vp-SHd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="deskripsi" destination="KmP-F9-8di" id="Yoq-KI-sOG"/>
+                <outlet property="deskripsiTitle" destination="iLB-Vo-r5Z" id="yTz-c2-nF2"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="8.8862559241706158"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

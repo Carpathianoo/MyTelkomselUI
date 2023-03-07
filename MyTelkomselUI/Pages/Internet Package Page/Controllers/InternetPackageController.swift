@@ -7,6 +7,13 @@
 
 import UIKit
 
+protocol InternetPackageControllerDelegate {
+    
+    func moveToDetailPage()
+    func seeder()
+    
+}
+
 enum Sections: Int {
     
     case promo = 0
@@ -20,15 +27,20 @@ enum Sections: Int {
     case dirumahAja = 8
 }
 
-class InternetPackageController: UIViewController {
+class InternetPackageController: UIViewController{
 
     @IBOutlet weak var internetPackageTable: UITableView!
     
     let headerTitles = ["Langganan Kamu", "Popular", "Cari Voucher, Yuk!", "Belajar #dirumahaja"]
     
+    var packageData: [Package] = []
+    
+    var delegate: InternetPackageControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Internet Packages"
+        delegate = self
         setupCell()
     }
 
@@ -46,7 +58,7 @@ class InternetPackageController: UIViewController {
         internetPackageTable.backgroundColor = .white
     }
 
-
+    
 
 }
 extension InternetPackageController: UITableViewDelegate, UITableViewDataSource {
@@ -62,18 +74,20 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         let section = Sections(rawValue: indexPath.section)
+        let packageCellHeight:CGFloat = 140
+        let voucherCellHeight:CGFloat = 180
         
         switch section {
         case .promo:
-            return 150
+            return packageCellHeight
         case .langganan:
-            return 150
+            return packageCellHeight
         case .popular:
-            return 150
+            return packageCellHeight
         case .voucher:
-            return 180
+            return voucherCellHeight
         case .dirumahAja:
-            return 150
+            return packageCellHeight
         default:
             return internetPackageTable.rowHeight
         }
@@ -101,6 +115,7 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
         case .langganan:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: LanggananTableCell.identifier, for: indexPath) as? LanggananTableCell else { return UITableViewCell() }
             cell.setupTableCell()
+            cell.delegate = self
             return cell
             
         case .popularTitle:
@@ -110,6 +125,7 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
         case .popular:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: PopularTableCell.identifier, for: indexPath) as? PopularTableCell else { return UITableViewCell() }
             cell.setupTableCell()
+            cell.delegate = self
             return cell
             
         case .voucherTitle:
@@ -129,17 +145,28 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
         case .dirumahAja:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: DirumahAjaTableCell.identifier, for: indexPath) as? DirumahAjaTableCell else { return UITableViewCell() }
             cell.setupTableCell()
+            cell.delegate = self
             return cell
             
         default:
             return UITableViewCell()
         }
-        
-        
-        
+    }
+
+}
+
+extension InternetPackageController: InternetPackageControllerDelegate {
+
+    func moveToDetailPage() {
+        let vc = PackageDetailController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func seeder() {
+        <#code#>
     }
     
     
-    
+
     
 }

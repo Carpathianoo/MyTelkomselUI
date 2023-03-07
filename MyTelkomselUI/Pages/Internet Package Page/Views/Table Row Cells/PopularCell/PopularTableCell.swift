@@ -11,6 +11,9 @@ class PopularTableCell: UITableViewCell {
 
     static let identifier = "PopularTableCell"
     
+    var delegate: InternetPackageControllerDelegate?
+
+    
     var popularCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -50,11 +53,11 @@ class PopularTableCell: UITableViewCell {
 extension PopularTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: -30, left: 16, bottom: 0, right: 0)
+        return UIEdgeInsets(top: -15, left: 16, bottom: 0, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: popularCollection.frame.width / 1.6, height: popularCollection.frame.height / 1.3)
+        return CGSize(width: popularCollection.frame.width / 1.6, height: popularCollection.frame.height / 1.2)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -72,7 +75,10 @@ extension PopularTableCell: UICollectionViewDataSource, UICollectionViewDelegate
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.moveToDetailPage()
+    }
+
     
     
     

@@ -7,10 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C64E972329B6EA570035025C /* RincianPaketTitleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E972129B6EA570035025C /* RincianPaketTitleTableCell.swift */; };
+		C64E972429B6EA570035025C /* RincianPaketTitleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C64E972229B6EA570035025C /* RincianPaketTitleTableCell.xib */; };
+		C64E972729B713E90035025C /* SuccessfulTransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E972529B713E90035025C /* SuccessfulTransactionController.swift */; };
+		C64E972829B713E90035025C /* SuccessfulTransactionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C64E972629B713E90035025C /* SuccessfulTransactionController.xib */; };
+		C6E0509529B6CCCA00018270 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0509429B6CCCA00018270 /* Package.swift */; };
+		C6E0509729B6CD8100018270 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0509629B6CD8100018270 /* Promo.swift */; };
+		C6E0509929B6CD8E00018270 /* Voucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E0509829B6CD8E00018270 /* Voucher.swift */; };
 		C6EF25C529B6403500592073 /* PackageDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25C329B6403500592073 /* PackageDetailController.swift */; };
 		C6EF25C629B6403500592073 /* PackageDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25C429B6403500592073 /* PackageDetailController.xib */; };
 		C6EF25D229B6436600592073 /* HargaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25D029B6436600592073 /* HargaTableCell.swift */; };
 		C6EF25D329B6436600592073 /* HargaTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25D129B6436600592073 /* HargaTableCell.xib */; };
+		C6EF25D629B64BAF00592073 /* MasaAktifTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25D429B64BAF00592073 /* MasaAktifTableCell.swift */; };
+		C6EF25D729B64BAF00592073 /* MasaAktifTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25D529B64BAF00592073 /* MasaAktifTableCell.xib */; };
+		C6EF25DB29B64BCB00592073 /* RincianPaketTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25D929B64BCB00592073 /* RincianPaketTableCell.swift */; };
+		C6EF25DC29B64BCB00592073 /* RincianPaketTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25DA29B64BCB00592073 /* RincianPaketTableCell.xib */; };
+		C6EF25DF29B64BF200592073 /* DeskripsiPaketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25DD29B64BF200592073 /* DeskripsiPaketCell.swift */; };
+		C6EF25E029B64BF200592073 /* DeskripsiPaketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25DE29B64BF200592073 /* DeskripsiPaketCell.xib */; };
+		C6EF25E329B64C0600592073 /* BeliTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25E129B64C0600592073 /* BeliTableCell.swift */; };
+		C6EF25E429B64C0600592073 /* BeliTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25E229B64C0600592073 /* BeliTableCell.xib */; };
 		C6FD2B2429B59ACF0008194C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B2329B59ACF0008194C /* AppDelegate.swift */; };
 		C6FD2B2629B59ACF0008194C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B2529B59ACF0008194C /* SceneDelegate.swift */; };
 		C6FD2B2829B59ACF0008194C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B2729B59ACF0008194C /* ViewController.swift */; };
@@ -36,10 +51,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C64E972129B6EA570035025C /* RincianPaketTitleTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RincianPaketTitleTableCell.swift; sourceTree = "<group>"; };
+		C64E972229B6EA570035025C /* RincianPaketTitleTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RincianPaketTitleTableCell.xib; sourceTree = "<group>"; };
+		C64E972529B713E90035025C /* SuccessfulTransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulTransactionController.swift; sourceTree = "<group>"; };
+		C64E972629B713E90035025C /* SuccessfulTransactionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulTransactionController.xib; sourceTree = "<group>"; };
+		C6E0509429B6CCCA00018270 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		C6E0509629B6CD8100018270 /* Promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		C6E0509829B6CD8E00018270 /* Voucher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voucher.swift; sourceTree = "<group>"; };
 		C6EF25C329B6403500592073 /* PackageDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDetailController.swift; sourceTree = "<group>"; };
 		C6EF25C429B6403500592073 /* PackageDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PackageDetailController.xib; sourceTree = "<group>"; };
 		C6EF25D029B6436600592073 /* HargaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HargaTableCell.swift; sourceTree = "<group>"; };
 		C6EF25D129B6436600592073 /* HargaTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HargaTableCell.xib; sourceTree = "<group>"; };
+		C6EF25D429B64BAF00592073 /* MasaAktifTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasaAktifTableCell.swift; sourceTree = "<group>"; };
+		C6EF25D529B64BAF00592073 /* MasaAktifTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasaAktifTableCell.xib; sourceTree = "<group>"; };
+		C6EF25D929B64BCB00592073 /* RincianPaketTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RincianPaketTableCell.swift; sourceTree = "<group>"; };
+		C6EF25DA29B64BCB00592073 /* RincianPaketTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RincianPaketTableCell.xib; sourceTree = "<group>"; };
+		C6EF25DD29B64BF200592073 /* DeskripsiPaketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskripsiPaketCell.swift; sourceTree = "<group>"; };
+		C6EF25DE29B64BF200592073 /* DeskripsiPaketCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeskripsiPaketCell.xib; sourceTree = "<group>"; };
+		C6EF25E129B64C0600592073 /* BeliTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliTableCell.swift; sourceTree = "<group>"; };
+		C6EF25E229B64C0600592073 /* BeliTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeliTableCell.xib; sourceTree = "<group>"; };
 		C6FD2B2029B59ACF0008194C /* MyTelkomselUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTelkomselUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FD2B2329B59ACF0008194C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FD2B2529B59ACF0008194C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C64E972029B6EA380035025C /* Rincian Paket Title */ = {
+			isa = PBXGroup;
+			children = (
+				C64E972129B6EA570035025C /* RincianPaketTitleTableCell.swift */,
+				C64E972229B6EA570035025C /* RincianPaketTitleTableCell.xib */,
+			);
+			path = "Rincian Paket Title";
+			sourceTree = "<group>";
+		};
 		C6EF25C729B640AF00592073 /* Harga Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +128,8 @@
 		C6EF25C829B640DE00592073 /* Masa Aktif Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C6EF25D429B64BAF00592073 /* MasaAktifTableCell.swift */,
+				C6EF25D529B64BAF00592073 /* MasaAktifTableCell.xib */,
 			);
 			path = "Masa Aktif Cell";
 			sourceTree = "<group>";
@@ -96,6 +137,8 @@
 		C6EF25C929B640EF00592073 /* Rincian Paket Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C6EF25D929B64BCB00592073 /* RincianPaketTableCell.swift */,
+				C6EF25DA29B64BCB00592073 /* RincianPaketTableCell.xib */,
 			);
 			path = "Rincian Paket Cell";
 			sourceTree = "<group>";
@@ -103,6 +146,8 @@
 		C6EF25CA29B640FF00592073 /* Deskripsi Paket Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C6EF25DD29B64BF200592073 /* DeskripsiPaketCell.swift */,
+				C6EF25DE29B64BF200592073 /* DeskripsiPaketCell.xib */,
 			);
 			path = "Deskripsi Paket Cell";
 			sourceTree = "<group>";
@@ -110,6 +155,8 @@
 		C6EF25CB29B6410D00592073 /* Beli Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C6EF25E129B64C0600592073 /* BeliTableCell.swift */,
+				C6EF25E229B64C0600592073 /* BeliTableCell.xib */,
 			);
 			path = "Beli Cell";
 			sourceTree = "<group>";
@@ -150,6 +197,9 @@
 		C6FD2B3729B59B120008194C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C6E0509429B6CCCA00018270 /* Package.swift */,
+				C6E0509629B6CD8100018270 /* Promo.swift */,
+				C6E0509829B6CD8E00018270 /* Voucher.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,7 +243,6 @@
 		C6FD2B3F29B59CCD0008194C /* Internet Package Page */ = {
 			isa = PBXGroup;
 			children = (
-				C6FD2B7229B5EDFA0008194C /* New Group */,
 				C6FD2B4129B5A01E0008194C /* Controllers */,
 				C6FD2B4029B5A00E0008194C /* Views */,
 			);
@@ -224,6 +273,7 @@
 			children = (
 				C6EF25C729B640AF00592073 /* Harga Cell */,
 				C6EF25C829B640DE00592073 /* Masa Aktif Cell */,
+				C64E972029B6EA380035025C /* Rincian Paket Title */,
 				C6EF25C929B640EF00592073 /* Rincian Paket Cell */,
 				C6EF25CA29B640FF00592073 /* Deskripsi Paket Cell */,
 				C6EF25CB29B6410D00592073 /* Beli Cell */,
@@ -250,6 +300,8 @@
 		C6FD2B4529B5A0430008194C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C64E972529B713E90035025C /* SuccessfulTransactionController.swift */,
+				C64E972629B713E90035025C /* SuccessfulTransactionController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -320,7 +372,6 @@
 		C6FD2B5E29B5B4700008194C /* RowCell */ = {
 			isa = PBXGroup;
 			children = (
-				C6FD2B6829B5D6EA0008194C /* LanggananCollectionCell */,
 				C6FD2B6629B5D5DC0008194C /* LanggananTableCell.swift */,
 			);
 			path = RowCell;
@@ -335,13 +386,6 @@
 			path = PromoCollectionCell;
 			sourceTree = "<group>";
 		};
-		C6FD2B6829B5D6EA0008194C /* LanggananCollectionCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LanggananCollectionCell;
-			sourceTree = "<group>";
-		};
 		C6FD2B6D29B5E5530008194C /* Package Collection Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,13 +393,6 @@
 				C6FD2B6A29B5D7180008194C /* PackageCollectionCell.xib */,
 			);
 			path = "Package Collection Cell";
-			sourceTree = "<group>";
-		};
-		C6FD2B7229B5EDFA0008194C /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		C6FD2B7329B5EE290008194C /* Reusable */ = {
@@ -438,10 +475,16 @@
 				C6FD2B7B29B5EECD0008194C /* VoucherCollectionCell.xib in Resources */,
 				C6EF25C629B6403500592073 /* PackageDetailController.xib in Resources */,
 				C6FD2B2D29B59AD10008194C /* Assets.xcassets in Resources */,
+				C64E972429B6EA570035025C /* RincianPaketTitleTableCell.xib in Resources */,
 				C6FD2B6C29B5D7180008194C /* PackageCollectionCell.xib in Resources */,
 				C6EF25D329B6436600592073 /* HargaTableCell.xib in Resources */,
+				C6EF25DC29B64BCB00592073 /* RincianPaketTableCell.xib in Resources */,
+				C6EF25E429B64C0600592073 /* BeliTableCell.xib in Resources */,
 				C6FD2B2B29B59ACF0008194C /* Main.storyboard in Resources */,
+				C6EF25D729B64BAF00592073 /* MasaAktifTableCell.xib in Resources */,
 				C6FD2B4929B5A2080008194C /* InternetPackageController.xib in Resources */,
+				C6EF25E029B64BF200592073 /* DeskripsiPaketCell.xib in Resources */,
+				C64E972829B713E90035025C /* SuccessfulTransactionController.xib in Resources */,
 				C6FD2B6529B5C6370008194C /* PromoCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,10 +497,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6FD2B7A29B5EECD0008194C /* VoucherCollectionCell.swift in Sources */,
+				C6EF25DB29B64BCB00592073 /* RincianPaketTableCell.swift in Sources */,
 				C6FD2B6729B5D5DC0008194C /* LanggananTableCell.swift in Sources */,
 				C6FD2B7629B5EE9F0008194C /* VoucherTableCell.swift in Sources */,
+				C64E972329B6EA570035025C /* RincianPaketTitleTableCell.swift in Sources */,
 				C6FD2B4829B5A2080008194C /* InternetPackageController.swift in Sources */,
 				C6FD2B7129B5E8870008194C /* DirumahAjaTableCell.swift in Sources */,
+				C6EF25D629B64BAF00592073 /* MasaAktifTableCell.swift in Sources */,
+				C6E0509929B6CD8E00018270 /* Voucher.swift in Sources */,
+				C6E0509729B6CD8100018270 /* Promo.swift in Sources */,
 				C6FD2B2829B59ACF0008194C /* ViewController.swift in Sources */,
 				C6EF25C529B6403500592073 /* PackageDetailController.swift in Sources */,
 				C6FD2B2429B59ACF0008194C /* AppDelegate.swift in Sources */,
@@ -465,9 +513,13 @@
 				C6FD2B6B29B5D7180008194C /* PackageCollectionCell.swift in Sources */,
 				C6EF25D229B6436600592073 /* HargaTableCell.swift in Sources */,
 				C6FD2B2629B59ACF0008194C /* SceneDelegate.swift in Sources */,
+				C6EF25E329B64C0600592073 /* BeliTableCell.swift in Sources */,
+				C64E972729B713E90035025C /* SuccessfulTransactionController.swift in Sources */,
 				C6FD2B6F29B5E6D20008194C /* PopularTableCell.swift in Sources */,
 				C6FD2B6429B5C6370008194C /* PromoCollectionCell.swift in Sources */,
 				C6FD2B3C29B59BC50008194C /* ColorPallette.swift in Sources */,
+				C6E0509529B6CCCA00018270 /* Package.swift in Sources */,
+				C6EF25DF29B64BF200592073 /* DeskripsiPaketCell.swift in Sources */,
 				C6FD2B5529B5A6EA0008194C /* HeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

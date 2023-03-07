@@ -26,17 +26,32 @@ class PackageCollectionCell: UICollectionViewCell {
     }
     
     func setupCell() {
-        paketSize.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        setupPaketSize()
         setupBackView()
         setupIconContainer()
         setupHargaDiskon()
-        
+        setupHargaNormal()
+        setupJenisPaket()
+        setupDurasiPaket()
     }
 
+    func setupPaketSize() {
+        paketSize.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+    }
+    
     func setupBackView() {
         backView.layer.cornerRadius = 4
         backView.layer.borderWidth = 1
         backView.layer.borderColor = UIColor.systemGray4.cgColor
+    }
+    
+    func setupHargaNormal() {
+        let dummy = "Rp96.000"
+        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: dummy)
+            attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSRange(location: 0, length: attributeString.length))
+        
+        hargaNormal.attributedText = attributeString
+        
     }
     
     func setupHargaDiskon() {
@@ -44,8 +59,17 @@ class PackageCollectionCell: UICollectionViewCell {
         
     }
     
+    func setupJenisPaket() {
+        jenisPaket.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+    }
+    
+    func setupDurasiPaket() {
+        durasiPaket.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+    }
+    
     func setupIconContainer() {
-        iconContainer.layer.cornerRadius = 6
+        iconContainer.layer.cornerRadius = 13
     }
     
 }
+

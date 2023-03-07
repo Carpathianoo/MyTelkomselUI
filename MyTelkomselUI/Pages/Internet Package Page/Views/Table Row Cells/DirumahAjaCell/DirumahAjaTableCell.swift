@@ -11,6 +11,8 @@ class DirumahAjaTableCell: UITableViewCell {
 
     static let identifier = "DirumahAjaTableCell"
     
+    var delegate: InternetPackageControllerDelegate?
+
     
     var dirumahAjaCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -50,11 +52,11 @@ class DirumahAjaTableCell: UITableViewCell {
 extension DirumahAjaTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: -30, left: 16, bottom: 0, right: 0)
+        return UIEdgeInsets(top: -15, left: 16, bottom: 0, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: dirumahAjaCollection.frame.width / 1.6, height: dirumahAjaCollection.frame.height / 1.3)
+        return CGSize(width: dirumahAjaCollection.frame.width / 1.6, height: dirumahAjaCollection.frame.height / 1.2)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -72,7 +74,10 @@ extension DirumahAjaTableCell: UICollectionViewDataSource, UICollectionViewDeleg
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.moveToDetailPage()
+    }
+
     
     
     

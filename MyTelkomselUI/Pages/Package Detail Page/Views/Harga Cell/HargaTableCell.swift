@@ -11,15 +11,30 @@ class HargaTableCell: UITableViewCell {
     
     static let identifier = "HargaTableCell"
     
+    @IBOutlet weak var hargaNormal: UILabel!
+    @IBOutlet weak var hargaDiskon: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func setupCell() {
+        setupHargaNormal()
+        setupHargaDiskon()
+        
+    }
+    
+    private func setupHargaNormal() {
+        let dummy = "Rp96.000"
+        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: dummy)
+            attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSRange(location: 0, length: attributeString.length))
+        
+        hargaNormal.attributedText = attributeString
+    }
+    
+    private func setupHargaDiskon() {
+        hargaDiskon.font = UIFont.systemFont(ofSize: 24, weight: .bold)
     }
     
 }
