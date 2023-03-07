@@ -17,17 +17,11 @@ struct Package {
     let isPopular: Bool
     let idDirumahAja: Bool
     let jenisPaket: String
-    let detail: [Detail]
-    
+    let description: String
+    let rincianPaket: [Rincian]
     
 }
 
-struct Detail {
-    
-    let rincianPaket: [Rincian]
-    let description: String
-    
-}
 
 struct Rincian {
     
@@ -35,3 +29,8 @@ struct Rincian {
     let packageContentValue: String?
     
 }
+
+//extension Package.Detail {
+//    let rincianPaket: [Rincian]
+//    let description: String
+//}

@@ -37,4 +37,9 @@ class HargaTableCell: UITableViewCell {
         hargaDiskon.font = UIFont.systemFont(ofSize: 24, weight: .bold)
     }
     
+    func configure(package: Package) {
+        hargaNormal.text = "Rp\(package.hargaNormal)"
+        hargaDiskon.text = "Rp\(package.hargaDiskon)"
+    }
+    
 }

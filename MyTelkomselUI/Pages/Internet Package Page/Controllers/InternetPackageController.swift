@@ -9,7 +9,7 @@ import UIKit
 
 protocol InternetPackageControllerDelegate {
     
-    func moveToDetailPage()
+    func moveToDetailPage(package: Package)
     func seeder()
     
 }
@@ -41,6 +41,7 @@ class InternetPackageController: UIViewController{
         super.viewDidLoad()
         self.title = "Internet Packages"
         delegate = self
+        seeder()
         setupCell()
     }
 
@@ -114,7 +115,7 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
             
         case .langganan:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: LanggananTableCell.identifier, for: indexPath) as? LanggananTableCell else { return UITableViewCell() }
-            cell.setupTableCell()
+            cell.setupTableCell(packages: packageData)
             cell.delegate = self
             return cell
             
@@ -124,7 +125,7 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
             
         case .popular:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: PopularTableCell.identifier, for: indexPath) as? PopularTableCell else { return UITableViewCell() }
-            cell.setupTableCell()
+            cell.setupTableCell(packages: packageData)
             cell.delegate = self
             return cell
             
@@ -144,7 +145,7 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
             
         case .dirumahAja:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: DirumahAjaTableCell.identifier, for: indexPath) as? DirumahAjaTableCell else { return UITableViewCell() }
-            cell.setupTableCell()
+            cell.setupTableCell(packages: packageData)
             cell.delegate = self
             return cell
             
@@ -157,16 +158,79 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
 
 extension InternetPackageController: InternetPackageControllerDelegate {
 
-    func moveToDetailPage() {
+    func moveToDetailPage(package: Package) {
         let vc = PackageDetailController()
+        vc.package = package
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func seeder() {
-        <#code#>
-    }
-    
-    
+        let data1 = Package(size: 14, masaAktif: "30 hari", hargaNormal: 99000, hargaDiskon: 93000, isLangganan: true, isPopular: true, idDirumahAja: false, jenisPaket: "Internet OMG", description:
+"""
+2.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+""", rincianPaket:
+                    [
+                        Rincian(packageContent: "Internet", packageContentValue: "4.5 GB"),
+                        Rincian(packageContent: "OMG", packageContentValue: "2 GB")
+                    ])
+        
+        let data2 = Package(size: 8, masaAktif: "15 hari", hargaNormal: 70000, hargaDiskon: 12357, isLangganan: true, isPopular: true, idDirumahAja: false, jenisPaket: "Internet Wow", description:
+"""
+2.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut en
 
+im ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iru
+
+
+re dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+""", rincianPaket:
+                    [
+                        Rincian(packageContent: "Internet", packageContentValue: "4.5 GB"),
+                        Rincian(packageContent: "OMG", packageContentValue: "2 GB"),
+                        Rincian(packageContent: "SMS Tsel", packageContentValue: "60 SMS")
+                    ])
+        
+        
+        let data3 = Package(size: 5, masaAktif: "7 hari", hargaNormal: 25000, hargaDiskon: 21000, isLangganan: false, isPopular: true, idDirumahAja: false, jenisPaket: "Internet OMG", description:
+"""
+2.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+""", rincianPaket:
+                    [
+                        Rincian(packageContent: "Internet", packageContentValue: "4.5 GB"),
+                        Rincian(packageContent: "OMG", packageContentValue: "2 GB"),
+                        Rincian(packageContent: "SMS Tsel", packageContentValue: "60 SMS"),
+                        Rincian(packageContent: "SMS Tsel", packageContentValue: "60 SMS")
+
+                    ])
+        
+        let data4 = Package(size: 2, masaAktif: "7 hari", hargaNormal: 0, hargaDiskon: 0, isLangganan: false, isPopular: false, idDirumahAja: true, jenisPaket: "Dirumah Aja", description:
+"""
+2.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+""", rincianPaket:
+                    [
+                        Rincian(packageContent: "Internet", packageContentValue: "4.5 GB"),
+                        Rincian(packageContent: "OMG", packageContentValue: "2 GB"),
+                        Rincian(packageContent: "SMS Tsel", packageContentValue: "60 SMS")
+                    ])
+        
+        let data5 = Package(size: 100, masaAktif: "2 Bulan", hargaNormal: 0, hargaDiskon: 0, isLangganan: false, isPopular: false, idDirumahAja: true, jenisPaket: "Belajar Oi!", description:
+"""
+2.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+""", rincianPaket:
+                    [
+                        Rincian(packageContent: "Internet", packageContentValue: "4.5 GB"),
+                        Rincian(packageContent: "OMG", packageContentValue: "2 GB"),
+                        Rincian(packageContent: "SMS Tsel", packageContentValue: "60 SMS"),
+                        Rincian(packageContent: "OMG", packageContentValue: "2 GB"),
+                        Rincian(packageContent: "SMS Tsel", packageContentValue: "60 SMS")
+
+                    ])
+        
+        packageData.append(data1)
+        packageData.append(data2)
+        packageData.append(data3)
+        packageData.append(data4)
+        packageData.append(data5)
     
+    }
+
 }

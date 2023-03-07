@@ -18,11 +18,16 @@ class SuccessfulTransactionController: UIViewController {
     @IBOutlet weak var namaPaket: UILabel!
     @IBOutlet weak var paketDesc: UILabel!
     
+    var package: Package?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
+        
+        guard let unwrappedPackage = self.package else { return }
+        
+        configure(package: unwrappedPackage)
     }
 
     func setupView() {
@@ -32,6 +37,31 @@ class SuccessfulTransactionController: UIViewController {
         
     }
 
+    func configure(package: Package) {
+        namaPaket.text = "\(package.jenisPaket) \(package.size) GB"
+        
+        var detailDesc: String = ""
+        var index = 0
+        
+        for item in package.rincianPaket {
+            
+            index += 1
+            
+            let merged = (item.packageContentValue ?? "") + " " + (item.packageContent ?? "")
+            
+            print("index: \(index) --- \(package.rincianPaket.count)")
+            
+            if index == package.rincianPaket.count {
+                detailDesc = detailDesc + merged
+            } else {
+                detailDesc = detailDesc + merged + " + "
+            }
+            
+        }
+        
+        print(detailDesc)
+        paketDesc.text = detailDesc
+    }
 
 
 

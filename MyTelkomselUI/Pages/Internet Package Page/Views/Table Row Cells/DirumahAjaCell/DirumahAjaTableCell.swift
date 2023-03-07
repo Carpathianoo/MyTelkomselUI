@@ -13,6 +13,7 @@ class DirumahAjaTableCell: UITableViewCell {
     
     var delegate: InternetPackageControllerDelegate?
 
+    var packageData: [Package] = []
     
     var dirumahAjaCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -38,7 +39,8 @@ class DirumahAjaTableCell: UITableViewCell {
         ])
     }
     
-    func setupTableCell() {
+    func setupTableCell(packages: [Package]) {
+        self.packageData = packages.filter { $0.idDirumahAja }
         contentView.addSubview(dirumahAjaCollection)
         dirumahAjaCollectionSetup()
         self.selectionStyle = .none
@@ -64,18 +66,19 @@ extension DirumahAjaTableCell: UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        4
+        return packageData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = dirumahAjaCollection.dequeueReusableCell(withReuseIdentifier: PackageCollectionCell.identifier, for: indexPath) as? PackageCollectionCell else { return UICollectionViewCell() }
         cell.setupCell()
+        cell.configure(model: packageData[indexPath.row])
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.delegate?.moveToDetailPage()
+        self.delegate?.moveToDetailPage(package: packageData[indexPath.row])
     }
 
     

@@ -47,5 +47,9 @@ class DeskripsiPaketCell: UITableViewCell {
         deskripsiTitle.font = UIFont.systemFont(ofSize: 16, weight: .bold)
     }
     
+    func configure(package: Package) {
+        deskripsi.text = package.description
+    }
+    
 }
 

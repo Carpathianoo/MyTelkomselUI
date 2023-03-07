@@ -71,5 +71,17 @@ class PackageCollectionCell: UICollectionViewCell {
         iconContainer.layer.cornerRadius = 13
     }
     
+    func configure(model: Package) {
+        paketSize.text = "\(model.size) GB"
+        durasiPaket.text = model.masaAktif
+        hargaNormal.text = "Rp\(model.hargaNormal)"
+        hargaDiskon.text = "Rp\(model.hargaDiskon)"
+        jenisPaket.text = model.jenisPaket
+        
+        if model.hargaDiskon == 0 {
+            hargaNormal.isHidden = true
+            hargaDiskon.text = "Free"
+        }
+    }
 }
 

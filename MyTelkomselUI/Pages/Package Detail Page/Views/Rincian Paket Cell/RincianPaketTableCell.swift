@@ -33,4 +33,10 @@ class RincianPaketTableCell: UITableViewCell {
     func setupKuantitas() {
         kuantitas.font = UIFont.systemFont(ofSize: 14, weight: .bold)
     }
+    
+    func configure(rincianPaket: Rincian?) {
+        jenisKuotaPaket.text = rincianPaket?.packageContent
+        kuantitas.text = rincianPaket?.packageContentValue
+        
+    }
 }

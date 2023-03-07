@@ -22,8 +22,11 @@ class PackageDetailController: UIViewController {
     @IBOutlet weak var detailTable: UITableView!
     @IBOutlet weak var beliSekarangButton: UIButton!
     
+    var package: Package?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupCell()
     }
     
@@ -44,6 +47,7 @@ class PackageDetailController: UIViewController {
     
     @IBAction func didBeliSekarangButtonPressed(_ sender: Any) {
         let vc = SuccessfulTransactionController()
+        vc.package = self.package
         self.navigationController?.pushViewController(vc, animated: true)
 
         
@@ -59,7 +63,7 @@ extension PackageDetailController: UITableViewDataSource, UITableViewDelegate {
         
         switch tableSections {
         case .rincian:
-            return 3
+            return package?.rincianPaket.count ?? 0
         default:
             return 1
         }
@@ -73,14 +77,20 @@ extension PackageDetailController: UITableViewDataSource, UITableViewDelegate {
         
         let section = DetailSections(rawValue: indexPath.section)
         
+        guard let unwrappedPackage = self.package else { return UITableViewCell() }
+       // print(unwrappedPackage)
+        
         switch section {
         case .harga:
             guard let cell = detailTable.dequeueReusableCell(withIdentifier: HargaTableCell.identifier, for: indexPath) as? HargaTableCell else { return UITableViewCell() }
             cell.setupCell()
+            
+            cell.configure(package: unwrappedPackage)
             return cell
             
         case .masaAktif:
             guard let cell = detailTable.dequeueReusableCell(withIdentifier: MasaAktifTableCell.identifier, for: indexPath) as? MasaAktifTableCell else { return UITableViewCell() }
+            cell.configure(package: unwrappedPackage)
             return cell
             
         case .rincianTitle:
@@ -88,11 +98,13 @@ extension PackageDetailController: UITableViewDataSource, UITableViewDelegate {
             return cell
 
         case .rincian:
-            guard let cell = detailTable.dequeueReusableCell(withIdentifier: RincianPaketTableCell.identifier, for: indexPath) as? RincianPaketTableCell else { return UITableViewCell() }
+            guard let cell = detailTable.dequeueReusableCell(withIdentifier: RincianPaketTableCell.identifier, for: indexPath) as? RincianPaketTableCell else { return UITableViewCell() }            
+            cell.configure(rincianPaket: unwrappedPackage.rincianPaket[indexPath.row])
             return cell
             
         case .deskripsi:
             guard let cell = detailTable.dequeueReusableCell(withIdentifier: DeskripsiPaketCell.identifier, for: indexPath) as? DeskripsiPaketCell else { return UITableViewCell() }
+            cell.configure(package: unwrappedPackage)
             return cell
 
 
