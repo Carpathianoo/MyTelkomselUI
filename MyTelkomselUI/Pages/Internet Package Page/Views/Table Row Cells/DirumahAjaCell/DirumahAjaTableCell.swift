@@ -29,7 +29,7 @@ class DirumahAjaTableCell: UITableViewCell {
         // Initialization code
     }
 
-    func dirumahAjaCollectionSetup() {
+    private func dirumahAjaCollectionSetup() {
         dirumahAjaCollection.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             dirumahAjaCollection.topAnchor.constraint(equalTo: contentView.topAnchor),

@@ -22,21 +22,23 @@ class PromoCollectionCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setupCell() {
+    func setupCell(promo: Promo) {
         
         let gradient = CAGradientLayer()
 
         gradient.frame = backView.bounds
-        gradient.colors = [UIColor.red.cgColor, UIColor.purple.cgColor]
+        gradient.colors = [promo.firstColor.cgColor, promo.secondColor.cgColor]
         gradient.startPoint = CGPoint(x: 0, y: 1)
         gradient.endPoint = CGPoint(x: 1, y: 1)
 
         backView.layer.insertSublayer(gradient, at: 0)
         
-        promoImage.layer.borderWidth = 1
-        promoImage.layer.borderColor = UIColor.black.cgColor
+        promoImage.image = UIImage(named: promo.image)
         
         promoTitle.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        promoTitle.text = promo.nama
+        
+        promoLabel.text = promo.desc
         
         
         self.backView.layer.cornerRadius = 4

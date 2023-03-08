@@ -24,15 +24,13 @@
 		C6EF25DC29B64BCB00592073 /* RincianPaketTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25DA29B64BCB00592073 /* RincianPaketTableCell.xib */; };
 		C6EF25DF29B64BF200592073 /* DeskripsiPaketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25DD29B64BF200592073 /* DeskripsiPaketCell.swift */; };
 		C6EF25E029B64BF200592073 /* DeskripsiPaketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25DE29B64BF200592073 /* DeskripsiPaketCell.xib */; };
-		C6EF25E329B64C0600592073 /* BeliTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF25E129B64C0600592073 /* BeliTableCell.swift */; };
-		C6EF25E429B64C0600592073 /* BeliTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EF25E229B64C0600592073 /* BeliTableCell.xib */; };
 		C6FD2B2429B59ACF0008194C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B2329B59ACF0008194C /* AppDelegate.swift */; };
 		C6FD2B2629B59ACF0008194C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B2529B59ACF0008194C /* SceneDelegate.swift */; };
 		C6FD2B2829B59ACF0008194C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B2729B59ACF0008194C /* ViewController.swift */; };
 		C6FD2B2B29B59ACF0008194C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B2929B59ACF0008194C /* Main.storyboard */; };
 		C6FD2B2D29B59AD10008194C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B2C29B59AD10008194C /* Assets.xcassets */; };
 		C6FD2B3029B59AD10008194C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B2E29B59AD10008194C /* LaunchScreen.storyboard */; };
-		C6FD2B3C29B59BC50008194C /* ColorPallette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B3B29B59BC50008194C /* ColorPallette.swift */; };
+		C6FD2B3C29B59BC50008194C /* Seeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B3B29B59BC50008194C /* Seeder.swift */; };
 		C6FD2B4829B5A2080008194C /* InternetPackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B4629B5A2080008194C /* InternetPackageController.swift */; };
 		C6FD2B4929B5A2080008194C /* InternetPackageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6FD2B4729B5A2080008194C /* InternetPackageController.xib */; };
 		C6FD2B5529B5A6EA0008194C /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD2B5329B5A6EA0008194C /* HeaderCell.swift */; };
@@ -68,8 +66,6 @@
 		C6EF25DA29B64BCB00592073 /* RincianPaketTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RincianPaketTableCell.xib; sourceTree = "<group>"; };
 		C6EF25DD29B64BF200592073 /* DeskripsiPaketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskripsiPaketCell.swift; sourceTree = "<group>"; };
 		C6EF25DE29B64BF200592073 /* DeskripsiPaketCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeskripsiPaketCell.xib; sourceTree = "<group>"; };
-		C6EF25E129B64C0600592073 /* BeliTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeliTableCell.swift; sourceTree = "<group>"; };
-		C6EF25E229B64C0600592073 /* BeliTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeliTableCell.xib; sourceTree = "<group>"; };
 		C6FD2B2029B59ACF0008194C /* MyTelkomselUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTelkomselUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FD2B2329B59ACF0008194C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6FD2B2529B59ACF0008194C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +74,7 @@
 		C6FD2B2C29B59AD10008194C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6FD2B2F29B59AD10008194C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6FD2B3129B59AD10008194C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6FD2B3B29B59BC50008194C /* ColorPallette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallette.swift; sourceTree = "<group>"; };
+		C6FD2B3B29B59BC50008194C /* Seeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeder.swift; sourceTree = "<group>"; };
 		C6FD2B4629B5A2080008194C /* InternetPackageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetPackageController.swift; sourceTree = "<group>"; };
 		C6FD2B4729B5A2080008194C /* InternetPackageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InternetPackageController.xib; sourceTree = "<group>"; };
 		C6FD2B5329B5A6EA0008194C /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
@@ -152,15 +148,6 @@
 			path = "Deskripsi Paket Cell";
 			sourceTree = "<group>";
 		};
-		C6EF25CB29B6410D00592073 /* Beli Cell */ = {
-			isa = PBXGroup;
-			children = (
-				C6EF25E129B64C0600592073 /* BeliTableCell.swift */,
-				C6EF25E229B64C0600592073 /* BeliTableCell.xib */,
-			);
-			path = "Beli Cell";
-			sourceTree = "<group>";
-		};
 		C6FD2B1729B59ACF0008194C = {
 			isa = PBXGroup;
 			children = (
@@ -217,7 +204,7 @@
 		C6FD2B3929B59B3A0008194C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C6FD2B3B29B59BC50008194C /* ColorPallette.swift */,
+				C6FD2B3B29B59BC50008194C /* Seeder.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -276,7 +263,6 @@
 				C64E972029B6EA380035025C /* Rincian Paket Title */,
 				C6EF25C929B640EF00592073 /* Rincian Paket Cell */,
 				C6EF25CA29B640FF00592073 /* Deskripsi Paket Cell */,
-				C6EF25CB29B6410D00592073 /* Beli Cell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -479,7 +465,6 @@
 				C6FD2B6C29B5D7180008194C /* PackageCollectionCell.xib in Resources */,
 				C6EF25D329B6436600592073 /* HargaTableCell.xib in Resources */,
 				C6EF25DC29B64BCB00592073 /* RincianPaketTableCell.xib in Resources */,
-				C6EF25E429B64C0600592073 /* BeliTableCell.xib in Resources */,
 				C6FD2B2B29B59ACF0008194C /* Main.storyboard in Resources */,
 				C6EF25D729B64BAF00592073 /* MasaAktifTableCell.xib in Resources */,
 				C6FD2B4929B5A2080008194C /* InternetPackageController.xib in Resources */,
@@ -513,11 +498,10 @@
 				C6FD2B6B29B5D7180008194C /* PackageCollectionCell.swift in Sources */,
 				C6EF25D229B6436600592073 /* HargaTableCell.swift in Sources */,
 				C6FD2B2629B59ACF0008194C /* SceneDelegate.swift in Sources */,
-				C6EF25E329B64C0600592073 /* BeliTableCell.swift in Sources */,
 				C64E972729B713E90035025C /* SuccessfulTransactionController.swift in Sources */,
 				C6FD2B6F29B5E6D20008194C /* PopularTableCell.swift in Sources */,
 				C6FD2B6429B5C6370008194C /* PromoCollectionCell.swift in Sources */,
-				C6FD2B3C29B59BC50008194C /* ColorPallette.swift in Sources */,
+				C6FD2B3C29B59BC50008194C /* Seeder.swift in Sources */,
 				C6E0509529B6CCCA00018270 /* Package.swift in Sources */,
 				C6EF25DF29B64BF200592073 /* DeskripsiPaketCell.swift in Sources */,
 				C6FD2B5529B5A6EA0008194C /* HeaderCell.swift in Sources */,

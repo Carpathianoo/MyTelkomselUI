@@ -23,7 +23,7 @@ class RincianPaketTitleTableCell: UITableViewCell {
         setupRincianPaketTitle()
     }
     
-    func setupRincianPaketTitle() {
+    private func setupRincianPaketTitle() {
         rincianPaketTitle.font = UIFont.systemFont(ofSize: 16, weight: .bold)
     
     }

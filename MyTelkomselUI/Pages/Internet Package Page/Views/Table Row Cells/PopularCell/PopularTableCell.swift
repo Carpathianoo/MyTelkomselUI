@@ -29,7 +29,7 @@ class PopularTableCell: UITableViewCell {
         // Initialization code
     }
 
-   func popularCollectionSetup() {
+    private func popularCollectionSetup() {
        popularCollection.translatesAutoresizingMaskIntoConstraints = false
        NSLayoutConstraint.activate([
         popularCollection.topAnchor.constraint(equalTo: contentView.topAnchor),

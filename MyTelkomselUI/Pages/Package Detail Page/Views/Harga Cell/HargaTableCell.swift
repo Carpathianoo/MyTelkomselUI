@@ -11,6 +11,9 @@ class HargaTableCell: UITableViewCell {
     
     static let identifier = "HargaTableCell"
     
+    let numberFormatter = String()
+    
+    @IBOutlet weak var namaPaket: UILabel!
     @IBOutlet weak var hargaNormal: UILabel!
     @IBOutlet weak var hargaDiskon: UILabel!
     
@@ -20,9 +23,14 @@ class HargaTableCell: UITableViewCell {
     }
     
     func setupCell() {
+        setupNamaPaket()
         setupHargaNormal()
         setupHargaDiskon()
         
+    }
+    
+    private func setupNamaPaket() {
+        namaPaket.font = UIFont.systemFont(ofSize: 24, weight: .bold)
     }
     
     private func setupHargaNormal() {
@@ -38,8 +46,15 @@ class HargaTableCell: UITableViewCell {
     }
     
     func configure(package: Package) {
-        hargaNormal.text = "Rp\(package.hargaNormal)"
-        hargaDiskon.text = "Rp\(package.hargaDiskon)"
+        namaPaket.text = "\(package.jenisPaket) \(package.size) GB"
+        hargaNormal.text = "Rp\(numberFormatter.df2so(package.hargaNormal))"
+        hargaDiskon.text = "Rp\(numberFormatter.df2so(package.hargaDiskon))"
+        
+        if package.hargaDiskon == 0 {
+            hargaNormal.isHidden = true
+            hargaDiskon.text = "Free"
+        }
+
     }
     
 }

@@ -26,11 +26,11 @@ class RincianPaketTableCell: UITableViewCell {
         
     }
 
-    func setupJenisKuotaPaket() {
+    private func setupJenisKuotaPaket() {
         jenisKuotaPaket.font = UIFont.systemFont(ofSize: 14, weight: .medium)
     }
     
-    func setupKuantitas() {
+    private func setupKuantitas() {
         kuantitas.font = UIFont.systemFont(ofSize: 14, weight: .bold)
     }
     

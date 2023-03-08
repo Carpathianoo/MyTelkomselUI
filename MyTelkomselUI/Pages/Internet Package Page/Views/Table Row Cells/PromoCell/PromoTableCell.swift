@@ -10,6 +10,7 @@ import UIKit
 class PromoTableCell: UITableViewCell {
 
     static let identifier = "PromoTableCell"
+    var promoData: [Promo] = []
     
     var promoCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -33,6 +34,7 @@ class PromoTableCell: UITableViewCell {
     
     func setupTableCell() {
         contentView.addSubview(promoCollection)
+        promoSeeder()
         promoCollectionSetup()
         self.selectionStyle = .none
         
@@ -58,13 +60,13 @@ extension PromoTableCell: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        4
+        promoData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = promoCollection.dequeueReusableCell(withReuseIdentifier: PromoCollectionCell.identifier, for: indexPath) as? PromoCollectionCell else { return UICollectionViewCell() }
         
-        cell.setupCell()
+        cell.setupCell(promo: promoData[indexPath.row])
         
         return cell
     }

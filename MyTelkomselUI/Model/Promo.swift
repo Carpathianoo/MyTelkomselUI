@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import UIKit
+
+struct Promo {
+    
+    let image: String
+    let nama: String
+    let desc: String
+    let firstColor: UIColor
+    let secondColor: UIColor
+    
+}

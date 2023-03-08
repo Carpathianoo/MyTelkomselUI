@@ -36,11 +36,11 @@ class PackageDetailController: UIViewController {
         detailTable.register(UINib(nibName: "RincianPaketTitleTableCell", bundle: nil), forCellReuseIdentifier: RincianPaketTitleTableCell.identifier)
         detailTable.register(UINib(nibName: "RincianPaketTableCell", bundle: nil), forCellReuseIdentifier: RincianPaketTableCell.identifier)
         detailTable.register(UINib(nibName: "DeskripsiPaketCell", bundle: nil), forCellReuseIdentifier: DeskripsiPaketCell.identifier)
-
-
         
         detailTable.delegate = self
         detailTable.dataSource = self
+        
+        beliSekarangButton.layer.cornerRadius = 4
         
     }
     

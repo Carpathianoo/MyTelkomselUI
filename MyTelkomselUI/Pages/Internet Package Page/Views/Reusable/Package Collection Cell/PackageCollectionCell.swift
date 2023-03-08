@@ -20,6 +20,8 @@ class PackageCollectionCell: UICollectionViewCell {
     @IBOutlet weak var saveIcon: UIImageView!
     @IBOutlet weak var iconContainer: UIView!
     
+    var numberFormatter = String()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -71,11 +73,15 @@ class PackageCollectionCell: UICollectionViewCell {
         iconContainer.layer.cornerRadius = 13
     }
     
+
+    
+
     func configure(model: Package) {
         paketSize.text = "\(model.size) GB"
         durasiPaket.text = model.masaAktif
-        hargaNormal.text = "Rp\(model.hargaNormal)"
-        hargaDiskon.text = "Rp\(model.hargaDiskon)"
+        
+        hargaNormal.text = "Rp\(numberFormatter.df2so(model.hargaNormal))"
+        hargaDiskon.text = "Rp\(numberFormatter.df2so(model.hargaDiskon))"
         jenisPaket.text = model.jenisPaket
         
         if model.hargaDiskon == 0 {
@@ -83,5 +89,16 @@ class PackageCollectionCell: UICollectionViewCell {
             hargaDiskon.text = "Free"
         }
     }
+}
+
+extension String {
+    public func df2so(_ price: Int) -> String{
+        let numberFormatter = NumberFormatter()
+        numberFormatter.groupingSeparator = "."
+        numberFormatter.groupingSize = 3
+        numberFormatter.usesGroupingSeparator = true
+        return numberFormatter.string(from: price as NSNumber)!
+    }
+    
 }
 

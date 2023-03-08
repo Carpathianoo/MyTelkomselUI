@@ -19,9 +19,7 @@ class VoucherCollectionCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setupCell() {
-//        self.contentView.layer.borderColor = UIColor.black.cgColor
-//        self.contentView.layer.borderWidth = 1
+    func setupCell(voucher: Voucher) {
         self.contentView.layer.cornerRadius = 4
         self.contentView.layer.masksToBounds = true
         layer.masksToBounds = false
@@ -30,6 +28,8 @@ class VoucherCollectionCell: UICollectionViewCell {
         layer.shadowOffset = CGSize(width: 2, height: 2)
         layer.shadowColor = UIColor.black.cgColor
 
+        voucherImage.image = UIImage(named: voucher.poster)
+        voucherTitle.text = voucher.title
     }
     
     

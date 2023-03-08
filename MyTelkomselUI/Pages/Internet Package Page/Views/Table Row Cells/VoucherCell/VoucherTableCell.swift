@@ -11,6 +11,7 @@ class VoucherTableCell: UITableViewCell {
 
     static let identifier = "VoucherTableCell"
     
+    var voucherData: [Voucher] = []
     
     var voucherCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -26,7 +27,7 @@ class VoucherTableCell: UITableViewCell {
         // Initialization code
     }
 
-    func voucherCollectionSetup() {
+    private func voucherCollectionSetup() {
         voucherCollection.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             voucherCollection.topAnchor.constraint(equalTo: contentView.topAnchor),
@@ -38,6 +39,7 @@ class VoucherTableCell: UITableViewCell {
     
     func setupTableCell() {
         contentView.addSubview(voucherCollection)
+        voucherSeeder()
         voucherCollectionSetup()
         self.selectionStyle = .none
         
@@ -62,12 +64,12 @@ extension VoucherTableCell: UICollectionViewDataSource, UICollectionViewDelegate
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        4
+        voucherData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = voucherCollection.dequeueReusableCell(withReuseIdentifier: VoucherCollectionCell.identifier, for: indexPath) as? VoucherCollectionCell else { return UICollectionViewCell() }
-        cell.setupCell()
+        cell.setupCell(voucher: voucherData[indexPath.row])
         
         return cell
     }

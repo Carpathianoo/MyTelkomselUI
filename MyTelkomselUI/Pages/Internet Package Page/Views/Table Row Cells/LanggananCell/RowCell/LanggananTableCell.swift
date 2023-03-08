@@ -29,7 +29,7 @@ class LanggananTableCell: UITableViewCell {
         // Initialization code
     }
 
-   func langgananCollectionSetup() {
+   private func langgananCollectionSetup() {
        langgananCollection.translatesAutoresizingMaskIntoConstraints = false
        NSLayoutConstraint.activate([
         langgananCollection.topAnchor.constraint(equalTo: contentView.topAnchor),

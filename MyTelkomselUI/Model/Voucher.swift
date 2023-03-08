@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Voucher {
+    
+    let poster: String
+    let title: String
+}
