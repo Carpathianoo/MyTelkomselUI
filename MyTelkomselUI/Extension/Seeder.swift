@@ -14,7 +14,18 @@ extension InternetPackageController {
     func packageSeeder() {
         let data1 = Package(size: 14, masaAktif: "30 hari", hargaNormal: 99000, hargaDiskon: 93000, isLangganan: true, isPopular: true, idDirumahAja: false, jenisPaket: "Internet OMG", description:
 """
-2.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Kuota Internet dapat digunakan di semua jaringan 2G/3G/4G/5G.",
+"Telepon ke sesama pelanggan Telkomsel.",
+
+"SMS ke sesama pelanggan Telkomsel.",
+
+"Kuota utama akan menjadi prioritas konsumsi pertama bagi pelanggan, kemudian diikuti kuota Apps untuk beberapa Apps sesuai ketentuan.",
+
+"Kuota Apps akan otomatis dapat digunakan jika kuota utama telah habis pada aplikasi sesuai ketentuan yaitu: WhatsApp, LINE, MusicMAX, GamesMAX, MAXstream, Facebook, Instagram, YouTube, TikTok dan Zoom.",
+
+"Akses Internet ke kuota Apps berlaku kuota pemakaian batas wajar. Bila kuota pemakaian batas wajar sudah habis, kecepatan akan disusaikan menjadi 128 kbps (tanpa memotong pulsa pelanggan) selama masa aktif paket berlaku.",
+
+"Akses internet ke aplikasi lain diluar kuota Apps jika kuota utama telah habis tetap bisa dilakukan dengan kecepatan maksimum 128 kbps (tanpa memotong pulsa pelanggan) selama masa aktif paket masih berlaku.
 """, rincianPaket:
                     [
                         Rincian(packageContent: "Internet", packageContentValue: "4.5 GB"),
