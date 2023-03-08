@@ -46,7 +46,7 @@ class HargaTableCell: UITableViewCell {
     }
     
     func configure(package: Package) {
-        namaPaket.text = "\(package.jenisPaket) \(package.size) GB"
+        namaPaket.text = package.jenisPaket + " " + String(format: "%g", package.size) + " GB"
         hargaNormal.text = "Rp\(numberFormatter.df2so(package.hargaNormal))"
         hargaDiskon.text = "Rp\(numberFormatter.df2so(package.hargaDiskon))"
         

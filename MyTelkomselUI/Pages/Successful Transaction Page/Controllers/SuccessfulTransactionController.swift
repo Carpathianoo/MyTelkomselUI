@@ -75,7 +75,7 @@ class SuccessfulTransactionController: UIViewController {
 
     
     func configure(package: Package) {
-        namaPaket.text = "\(package.jenisPaket) \(package.size) GB"
+        namaPaket.text = package.jenisPaket +  " " + String(format: "%g", package.size) + " GB"
         
         var detailDesc: String = ""
         var index = 0

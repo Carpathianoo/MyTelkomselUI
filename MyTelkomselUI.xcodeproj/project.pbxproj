@@ -241,7 +241,6 @@
 			children = (
 				C6FD2B7329B5EE290008194C /* Reusable */,
 				C6FD2B4D29B5A66A0008194C /* Table Row Cells */,
-				C6FD2B4C29B5A6630008194C /* Table Header Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,6 +383,7 @@
 		C6FD2B7329B5EE290008194C /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				C6FD2B4C29B5A6630008194C /* Table Header Cells */,
 				C6FD2B6D29B5E5530008194C /* Package Collection Cell */,
 			);
 			path = Reusable;

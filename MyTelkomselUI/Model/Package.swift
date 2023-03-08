@@ -29,8 +29,3 @@ struct Rincian {
     let packageContentValue: String?
     
 }
-
-//extension Package.Detail {
-//    let rincianPaket: [Rincian]
-//    let description: String
-//}
