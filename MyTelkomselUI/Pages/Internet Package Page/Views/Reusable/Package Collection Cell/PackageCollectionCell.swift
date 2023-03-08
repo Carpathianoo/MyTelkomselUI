@@ -77,7 +77,7 @@ class PackageCollectionCell: UICollectionViewCell {
     
 
     func configure(model: Package) {
-        paketSize.text = "\(model.size) GB"
+        paketSize.text = String(format: "%g", model.size) + " GB"
         durasiPaket.text = model.masaAktif
         
         hargaNormal.text = "Rp\(numberFormatter.df2so(model.hargaNormal))"

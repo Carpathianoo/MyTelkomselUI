@@ -9,7 +9,7 @@ import Foundation
 
 struct Package {
     
-    let size: Int
+    let size: Float
     let masaAktif: String
     let hargaNormal: Int
     let hargaDiskon: Int

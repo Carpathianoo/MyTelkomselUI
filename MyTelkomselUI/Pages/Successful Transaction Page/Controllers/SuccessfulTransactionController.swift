@@ -82,9 +82,7 @@ class SuccessfulTransactionController: UIViewController {
         
         for item in package.rincianPaket {
             index += 1
-            
             let merged = (item.packageContentValue ?? "") + " " + (item.packageContent ?? "")
-            
             if index == package.rincianPaket.count {
                 detailDesc = detailDesc + merged
             } else {
