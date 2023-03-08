@@ -39,6 +39,7 @@ class InternetPackageController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Internet Packages"
+        self.navigationItem.backButtonDisplayMode = .minimal
         delegate = self
         packageSeeder()
         setupCell()

@@ -26,7 +26,7 @@ class PackageDetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.backButtonDisplayMode = .minimal
         setupCell()
     }
     
@@ -41,6 +41,7 @@ class PackageDetailController: UIViewController {
         detailTable.dataSource = self
         
         beliSekarangButton.layer.cornerRadius = 4
+        beliSekarangButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         
     }
     

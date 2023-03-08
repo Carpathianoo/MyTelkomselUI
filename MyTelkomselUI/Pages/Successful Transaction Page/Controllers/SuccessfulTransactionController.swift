@@ -42,16 +42,21 @@ class SuccessfulTransactionController: UIViewController {
         detailContainer.layer.borderWidth = 1
         detailContainer.layer.cornerRadius = 4
         
+        paketInternetTitle.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+        
         namaPaket.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         
+        paketDesc.font = UIFont.systemFont(ofSize: 12, weight: .medium)
+        
         homePageButton.layer.cornerRadius = 4
+        homePageButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
     }
 
     private func animate() {
-        UIView.animate(withDuration: 0.8, animations: {
+        UIView.animate(withDuration: 0.4, delay: 0.3, animations: {
             self.outerCircle.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         }) { (finished) in
-            UIView.animate(withDuration: 0.8, animations: {
+            UIView.animate(withDuration: 1, animations: {
                 self.outerCircle.transform = CGAffineTransform.identity
             })
         }

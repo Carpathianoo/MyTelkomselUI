@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationItem.backButtonDisplayMode = .minimal
         let vc = InternetPackageController()
         self.navigationController?.pushViewController(vc, animated: false)
         movePageButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
