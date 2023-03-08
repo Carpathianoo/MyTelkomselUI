@@ -31,6 +31,10 @@ class SuccessfulTransactionController: UIViewController {
 
     func setupView() {
         outerCircle.layer.cornerRadius = outerCircle.frame.height / 2
+        outerCircle.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            outerCircle.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        ])
             
         innerCircle.layer.cornerRadius = innerCircle.frame.height / 2
         

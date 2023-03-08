@@ -19,23 +19,22 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSr-Bx-ruX">
-                        <rect key="frame" x="0.0" y="0.0" width="380" height="106"/>
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="124"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="omg" translatesAutoresizingMaskIntoConstraints="NO" id="8zI-v8-XkN">
-                                <rect key="frame" x="8" y="8" width="90" height="90"/>
+                                <rect key="frame" x="8" y="8" width="108" height="108"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="c72-LW-sDv"/>
-                                    <constraint firstAttribute="height" constant="90" id="hnX-Kc-m7X"/>
+                                    <constraint firstAttribute="width" secondItem="8zI-v8-XkN" secondAttribute="height" multiplier="1:1" id="PX0-uu-ZHq"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Bisa YouTube dan Sosmed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYh-tQ-Weo">
-                                <rect key="frame" x="106" y="36.333333333333336" width="266" height="17"/>
+                                <rect key="frame" x="124" y="36.333333333333336" width="248" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="Internet OMG!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntv-Bv-JOc">
-                                <rect key="frame" x="106" y="14.999999999999998" width="266" height="19.333333333333329"/>
+                                <rect key="frame" x="124" y="14.999999999999998" width="248" height="19.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -44,6 +43,7 @@
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="ntv-Bv-JOc" firstAttribute="leading" secondItem="8zI-v8-XkN" secondAttribute="trailing" constant="8" id="4Yx-c2-h55"/>
+                            <constraint firstAttribute="bottom" secondItem="8zI-v8-XkN" secondAttribute="bottom" constant="8" id="7GU-qu-J1B"/>
                             <constraint firstItem="8zI-v8-XkN" firstAttribute="top" secondItem="zSr-Bx-ruX" secondAttribute="top" constant="8" id="EdZ-Tl-g3l"/>
                             <constraint firstItem="8zI-v8-XkN" firstAttribute="leading" secondItem="zSr-Bx-ruX" secondAttribute="leading" constant="8" id="JWO-jX-x1M"/>
                             <constraint firstItem="ntv-Bv-JOc" firstAttribute="top" secondItem="zSr-Bx-ruX" secondAttribute="top" constant="15" id="Nrm-JT-xpw"/>
@@ -51,7 +51,6 @@
                             <constraint firstAttribute="trailing" secondItem="bYh-tQ-Weo" secondAttribute="trailing" constant="8" id="Suw-XM-eSN"/>
                             <constraint firstItem="bYh-tQ-Weo" firstAttribute="leading" secondItem="8zI-v8-XkN" secondAttribute="trailing" constant="8" id="THQ-X2-rcq"/>
                             <constraint firstItem="bYh-tQ-Weo" firstAttribute="top" secondItem="ntv-Bv-JOc" secondAttribute="bottom" constant="2" id="bHf-Cv-oY6"/>
-                            <constraint firstAttribute="bottom" secondItem="8zI-v8-XkN" secondAttribute="bottom" constant="8" id="ecZ-4u-efw"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -59,6 +58,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="zSr-Bx-ruX" secondAttribute="trailing" id="Kxf-TX-4Kr"/>
+                <constraint firstAttribute="bottom" secondItem="zSr-Bx-ruX" secondAttribute="bottom" id="PAC-qe-t8u"/>
                 <constraint firstItem="zSr-Bx-ruX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W60-I4-3JJ"/>
                 <constraint firstItem="zSr-Bx-ruX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jXE-vS-MHY"/>
             </constraints>

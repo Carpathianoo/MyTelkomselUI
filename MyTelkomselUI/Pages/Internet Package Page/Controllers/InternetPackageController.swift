@@ -75,8 +75,8 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         let section = Sections(rawValue: indexPath.section)
-        let packageCellHeight:CGFloat = 140
-        let voucherCellHeight:CGFloat = 180
+        let packageCellHeight:CGFloat = view.frame.height / 6
+        let voucherCellHeight:CGFloat = view.frame.height / 5
         
         switch section {
         case .promo:

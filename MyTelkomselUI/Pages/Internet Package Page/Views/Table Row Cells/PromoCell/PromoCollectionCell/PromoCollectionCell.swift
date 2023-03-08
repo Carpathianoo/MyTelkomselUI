@@ -26,7 +26,7 @@ class PromoCollectionCell: UICollectionViewCell {
         
         let gradient = CAGradientLayer()
 
-        gradient.frame = backView.bounds
+        gradient.frame = self.bounds
         gradient.colors = [promo.firstColor.cgColor, promo.secondColor.cgColor]
         gradient.startPoint = CGPoint(x: 0, y: 1)
         gradient.endPoint = CGPoint(x: 1, y: 1)
