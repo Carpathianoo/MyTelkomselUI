@@ -12,6 +12,7 @@ class VoucherTableCell: UITableViewCell {
     static let identifier = "VoucherTableCell"
     
     var voucherData: [Voucher] = []
+    var cellWidth: CGFloat = 0
     
     var voucherCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -37,10 +38,11 @@ class VoucherTableCell: UITableViewCell {
         ])
     }
     
-    func setupTableCell() {
+    func setupTableCell(cellWidth: CGFloat) {
         contentView.addSubview(voucherCollection)
         voucherSeeder()
         voucherCollectionSetup()
+        self.cellWidth = cellWidth
         self.selectionStyle = .none
         
         voucherCollection.delegate = self
@@ -52,11 +54,11 @@ class VoucherTableCell: UITableViewCell {
 extension VoucherTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 16, bottom: 8, right: 0)
+        return UIEdgeInsets(top: -8, left: 16, bottom: 8, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: voucherCollection.frame.width / 1.5, height: voucherCollection.frame.height / 1.1)
+        return CGSize(width: cellWidth, height: cellWidth / 1.46)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

@@ -24,6 +24,8 @@ class SuccessfulTransactionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.largeTitleDisplayMode = .never
+
         setupView()
         guard let unwrappedPackage = self.package else { return }
         configure(package: unwrappedPackage)

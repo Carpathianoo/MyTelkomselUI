@@ -14,6 +14,7 @@ class LanggananTableCell: UITableViewCell {
     var delegate: InternetPackageControllerDelegate?
     
     var packageData: [Package] = []
+    var cellWidth: CGFloat = 0
     
     var langgananCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -39,10 +40,12 @@ class LanggananTableCell: UITableViewCell {
        ])
    }
    
-    func setupTableCell(packages: [Package]) {
+    func setupTableCell(packages: [Package], cellWidth: CGFloat) {
        self.packageData = packages.filter { $0.isLangganan }
        contentView.addSubview(langgananCollection)
        langgananCollectionSetup()
+       self.cellWidth = cellWidth
+
        self.selectionStyle = .none
        
        langgananCollection.delegate = self
@@ -57,11 +60,12 @@ class LanggananTableCell: UITableViewCell {
 extension LanggananTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: -15, left: 16, bottom: 0, right: 0)
+        return UIEdgeInsets(top: -8, left: 16, bottom: 8, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: langgananCollection.frame.width / 1.6, height: langgananCollection.frame.height / 1.2)
+        print("cellHeight: \(langgananCollection.frame.height / 1.2)")
+        return CGSize(width: cellWidth, height: cellWidth / 2.1)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

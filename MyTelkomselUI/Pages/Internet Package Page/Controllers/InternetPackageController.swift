@@ -29,17 +29,20 @@ enum Sections: Int {
 class InternetPackageController: UIViewController{
 
     @IBOutlet weak var internetPackageTable: UITableView!
-    
+
     let headerTitles = ["Langganan Kamu", "Popular", "Cari Voucher, Yuk!", "Belajar #dirumahaja"]
-    
     var packageData: [Package] = []
-    
     var delegate: InternetPackageControllerDelegate?
+    var deviceModel: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Internet Packages"
         self.navigationItem.backButtonDisplayMode = .minimal
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+        deviceModel = modelIdentifier()
+        print("device model: \(deviceModel)")
         delegate = self
         packageSeeder()
         setupCell()
@@ -59,7 +62,12 @@ class InternetPackageController: UIViewController{
         internetPackageTable.backgroundColor = .white
     }
 
-    
+    func modelIdentifier() -> String {
+        if let simulatorModelIdentifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] { return simulatorModelIdentifier }
+        var sysinfo = utsname()
+        uname(&sysinfo) // ignore return value
+        return String(bytes: Data(bytes: &sysinfo.machine, count: Int(_SYS_NAMELEN)), encoding: .ascii)!.trimmingCharacters(in: .controlCharacters)
+    }
 
 }
 extension InternetPackageController: UITableViewDelegate, UITableViewDataSource {
@@ -75,12 +83,14 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         let section = Sections(rawValue: indexPath.section)
-        let packageCellHeight:CGFloat = view.frame.height / 6
-        let voucherCellHeight:CGFloat = view.frame.height / 5
+        let promoCellHeight: CGFloat = 120
+        let packageCellHeight:CGFloat = 134
+        let voucherCellHeight: CGFloat = 190
+
         
         switch section {
         case .promo:
-            return packageCellHeight
+            return promoCellHeight
         case .langganan:
             return packageCellHeight
         case .popular:
@@ -101,12 +111,14 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
         guard let headerCell = internetPackageTable.dequeueReusableCell(withIdentifier: HeaderCell.identifier) as? HeaderCell else { return UITableViewCell() }
         
         let section = Sections(rawValue: indexPath.section)
+        let cellWidth: CGFloat = 248
+
         
         switch section {
         case .promo:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: PromoTableCell.identifier, for: indexPath) as? PromoTableCell else { return UITableViewCell() }
 
-            cell.setupTableCell()
+            cell.setupTableCell(cellWidth: cellWidth)
             
             return cell
         case .langgananTitle:
@@ -115,7 +127,7 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
             
         case .langganan:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: LanggananTableCell.identifier, for: indexPath) as? LanggananTableCell else { return UITableViewCell() }
-            cell.setupTableCell(packages: packageData)
+            cell.setupTableCell(packages: packageData, cellWidth: cellWidth)
             cell.delegate = self
             return cell
             
@@ -125,7 +137,7 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
             
         case .popular:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: PopularTableCell.identifier, for: indexPath) as? PopularTableCell else { return UITableViewCell() }
-            cell.setupTableCell(packages: packageData)
+            cell.setupTableCell(packages: packageData, cellWidth: cellWidth)
             cell.delegate = self
             return cell
             
@@ -135,7 +147,7 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
             
         case .voucher:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: VoucherTableCell.identifier, for: indexPath) as? VoucherTableCell else { return UITableViewCell() }
-            cell.setupTableCell()
+            cell.setupTableCell(cellWidth: cellWidth)
             return cell
             
         case .dirumahAjaTitle:
@@ -145,7 +157,7 @@ extension InternetPackageController: UITableViewDelegate, UITableViewDataSource 
             
         case .dirumahAja:
             guard let cell = internetPackageTable.dequeueReusableCell(withIdentifier: DirumahAjaTableCell.identifier, for: indexPath) as? DirumahAjaTableCell else { return UITableViewCell() }
-            cell.setupTableCell(packages: packageData)
+            cell.setupTableCell(packages: packageData, cellWidth: cellWidth)
             cell.delegate = self
             return cell
             

@@ -11,6 +11,7 @@ class PromoTableCell: UITableViewCell {
 
     static let identifier = "PromoTableCell"
     var promoData: [Promo] = []
+    var cellWidth: CGFloat = 0
     
     var promoCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -32,11 +33,12 @@ class PromoTableCell: UITableViewCell {
         ])
     }
     
-    func setupTableCell() {
+    func setupTableCell(cellWidth: CGFloat) {
         contentView.addSubview(promoCollection)
         promoSeeder()
         promoCollectionSetup()
         self.selectionStyle = .none
+        self.cellWidth = cellWidth
         
         promoCollection.delegate = self
         promoCollection.dataSource = self
@@ -52,7 +54,7 @@ extension PromoTableCell: UICollectionViewDataSource, UICollectionViewDelegateFl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: promoCollection.frame.width / 1.4, height: promoCollection.frame.height / 1.3)
+        return CGSize(width: cellWidth, height: cellWidth / 2.3)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {

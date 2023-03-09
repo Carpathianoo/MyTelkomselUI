@@ -12,23 +12,23 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VoucherCollectionCell" customModule="MyTelkomselUI" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="212" height="188"/>
+            <rect key="frame" x="0.0" y="0.0" width="248" height="165"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="212" height="188"/>
+                <rect key="frame" x="0.0" y="0.0" width="248" height="165"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86t-cc-gUq">
-                        <rect key="frame" x="0.0" y="0.0" width="212" height="188"/>
+                        <rect key="frame" x="0.0" y="0.0" width="248" height="165"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="voucher1" translatesAutoresizingMaskIntoConstraints="NO" id="Awm-ag-yV1">
-                                <rect key="frame" x="0.0" y="0.0" width="212" height="110"/>
+                                <rect key="frame" x="0.0" y="0.0" width="248" height="112"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="HuX-95-HaD"/>
+                                    <constraint firstAttribute="width" secondItem="Awm-ag-yV1" secondAttribute="height" multiplier="31:14" id="jGF-sb-k7J"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Benefits from DOUBLE UNTUNG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOM-n5-Pg8">
-                                <rect key="frame" x="8" y="118" width="196" height="62"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Benefits from DOUBLE UNTUNG" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOM-n5-Pg8">
+                                <rect key="frame" x="8" y="120.00000000000001" width="232" height="33.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,10 +38,9 @@
                         <constraints>
                             <constraint firstItem="vOM-n5-Pg8" firstAttribute="leading" secondItem="86t-cc-gUq" secondAttribute="leading" constant="8" id="4cm-kC-pMS"/>
                             <constraint firstItem="Awm-ag-yV1" firstAttribute="top" secondItem="86t-cc-gUq" secondAttribute="top" id="Dqz-0d-5DJ"/>
-                            <constraint firstAttribute="bottom" secondItem="vOM-n5-Pg8" secondAttribute="bottom" constant="8" id="KXu-Yd-9bB"/>
                             <constraint firstItem="Awm-ag-yV1" firstAttribute="leading" secondItem="86t-cc-gUq" secondAttribute="leading" id="R12-EP-JWJ"/>
-                            <constraint firstItem="vOM-n5-Pg8" firstAttribute="top" secondItem="Awm-ag-yV1" secondAttribute="bottom" constant="8" symbolic="YES" id="YOV-tq-zi2"/>
                             <constraint firstAttribute="trailing" secondItem="vOM-n5-Pg8" secondAttribute="trailing" constant="8" id="beY-dc-wG1"/>
+                            <constraint firstItem="vOM-n5-Pg8" firstAttribute="top" secondItem="Awm-ag-yV1" secondAttribute="bottom" constant="8" id="eWe-vb-vdr"/>
                             <constraint firstAttribute="trailing" secondItem="Awm-ag-yV1" secondAttribute="trailing" id="zHg-DO-QGw"/>
                         </constraints>
                     </view>
@@ -54,12 +53,12 @@
                 <constraint firstAttribute="trailing" secondItem="86t-cc-gUq" secondAttribute="trailing" id="kGU-DH-RAS"/>
                 <constraint firstAttribute="bottom" secondItem="86t-cc-gUq" secondAttribute="bottom" id="lvU-Y5-PYS"/>
             </constraints>
-            <size key="customSize" width="212" height="188"/>
+            <size key="customSize" width="393" height="188"/>
             <connections>
                 <outlet property="voucherImage" destination="Awm-ag-yV1" id="7gO-pD-EG1"/>
                 <outlet property="voucherTitle" destination="vOM-n5-Pg8" id="fyJ-o7-e6M"/>
             </connections>
-            <point key="canvasLocation" x="255.38461538461539" y="36.255924170616112"/>
+            <point key="canvasLocation" x="370.76923076923077" y="40.521327014218009"/>
         </collectionViewCell>
     </objects>
     <resources>

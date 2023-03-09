@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PackageDetailController" customModule="MyTelkomselUI" customModuleProvider="target">
             <connections>
                 <outlet property="beliSekarangButton" destination="waF-10-2Fz" id="jDy-LH-Gq4"/>
+                <outlet property="buttonContainerView" destination="dFX-64-THz" id="A2g-qM-NQh"/>
                 <outlet property="detailTable" destination="bwD-OD-TfB" id="7AY-Ay-zXS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,10 +28,10 @@
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFX-64-THz">
-                    <rect key="frame" x="0.0" y="748" width="390" height="96"/>
+                    <rect key="frame" x="-2" y="748" width="394" height="96"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waF-10-2Fz">
-                            <rect key="frame" x="16" y="12" width="358" height="42"/>
+                            <rect key="frame" x="22" y="12" width="350" height="42"/>
                             <color key="backgroundColor" name="mainColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="42" id="Odj-F4-wRP"/>
@@ -44,10 +45,10 @@
                         </button>
                     </subviews>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="waF-10-2Fz" secondAttribute="trailing" constant="22" id="fzv-bx-hgB"/>
                         <constraint firstAttribute="height" constant="96" id="o5W-a7-T7i"/>
-                        <constraint firstAttribute="trailing" secondItem="waF-10-2Fz" secondAttribute="trailing" constant="16" id="oGu-tH-SFw"/>
                         <constraint firstItem="waF-10-2Fz" firstAttribute="top" secondItem="dFX-64-THz" secondAttribute="top" constant="12" id="vUG-e4-kUh"/>
-                        <constraint firstItem="waF-10-2Fz" firstAttribute="leading" secondItem="dFX-64-THz" secondAttribute="leading" constant="16" id="yw8-Gl-DKZ"/>
+                        <constraint firstItem="waF-10-2Fz" firstAttribute="leading" secondItem="dFX-64-THz" secondAttribute="leading" constant="22" id="w8A-rx-NPe"/>
                     </constraints>
                 </view>
             </subviews>
@@ -58,10 +59,10 @@
                 <constraint firstItem="bwD-OD-TfB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IBD-JO-VVo"/>
                 <constraint firstItem="bwD-OD-TfB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="M0P-8V-Dh4"/>
                 <constraint firstAttribute="bottom" secondItem="dFX-64-THz" secondAttribute="bottom" id="ORk-VB-SXl"/>
-                <constraint firstItem="dFX-64-THz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VoR-3e-Qw0"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dFX-64-THz" secondAttribute="trailing" id="a33-yF-YMM"/>
                 <constraint firstItem="bwD-OD-TfB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aPF-xM-K62"/>
+                <constraint firstItem="dFX-64-THz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-2" id="mQP-eB-zqK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bwD-OD-TfB" secondAttribute="trailing" id="uL3-QG-xah"/>
+                <constraint firstAttribute="trailing" secondItem="dFX-64-THz" secondAttribute="trailing" constant="-2" id="v67-gr-spS"/>
             </constraints>
             <point key="canvasLocation" x="130.76923076923077" y="-12.085308056872037"/>
         </view>

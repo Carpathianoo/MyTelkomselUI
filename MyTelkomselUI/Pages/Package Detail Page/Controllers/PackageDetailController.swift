@@ -21,12 +21,15 @@ class PackageDetailController: UIViewController {
     
     @IBOutlet weak var detailTable: UITableView!
     @IBOutlet weak var beliSekarangButton: UIButton!
+    @IBOutlet weak var buttonContainerView: UIView!
     
     var package: Package?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.backButtonDisplayMode = .minimal
+        navigationItem.largeTitleDisplayMode = .never
+
         setupCell()
     }
     
@@ -42,9 +45,13 @@ class PackageDetailController: UIViewController {
         
         beliSekarangButton.layer.cornerRadius = 4
         beliSekarangButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        
+        addLine()
     }
     
+    func addLine() {
+        buttonContainerView.layer.borderWidth = 1
+        buttonContainerView.layer.borderColor = UIColor.systemGray4.cgColor
+    }
     
     @IBAction func didBeliSekarangButtonPressed(_ sender: Any) {
         let vc = SuccessfulTransactionController()

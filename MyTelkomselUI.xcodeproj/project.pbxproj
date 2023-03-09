@@ -112,6 +112,15 @@
 			path = "Rincian Paket Title";
 			sourceTree = "<group>";
 		};
+		C6CF02FA29B884060036437B /* Dummy Page */ = {
+			isa = PBXGroup;
+			children = (
+				C6FD2B2729B59ACF0008194C /* ViewController.swift */,
+				C6FD2B2929B59ACF0008194C /* Main.storyboard */,
+			);
+			path = "Dummy Page";
+			sourceTree = "<group>";
+		};
 		C6EF25C729B640AF00592073 /* Harga Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,8 +181,6 @@
 				C6FD2B3829B59B180008194C /* Pages */,
 				C6FD2B2329B59ACF0008194C /* AppDelegate.swift */,
 				C6FD2B2529B59ACF0008194C /* SceneDelegate.swift */,
-				C6FD2B2729B59ACF0008194C /* ViewController.swift */,
-				C6FD2B2929B59ACF0008194C /* Main.storyboard */,
 				C6FD2B2C29B59AD10008194C /* Assets.xcassets */,
 				C6FD2B2E29B59AD10008194C /* LaunchScreen.storyboard */,
 				C6FD2B3129B59AD10008194C /* Info.plist */,
@@ -194,6 +201,7 @@
 		C6FD2B3829B59B180008194C /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				C6CF02FA29B884060036437B /* Dummy Page */,
 				C6FD2B3F29B59CCD0008194C /* Internet Package Page */,
 				C6FD2B3E29B59CC10008194C /* Package Detail Page */,
 				C6FD2B3D29B59C400008194C /* Successful Transaction Page */,

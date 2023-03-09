@@ -14,6 +14,7 @@ class DirumahAjaTableCell: UITableViewCell {
     var delegate: InternetPackageControllerDelegate?
 
     var packageData: [Package] = []
+    var cellWidth: CGFloat = 0
     
     var dirumahAjaCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -39,10 +40,11 @@ class DirumahAjaTableCell: UITableViewCell {
         ])
     }
     
-    func setupTableCell(packages: [Package]) {
+    func setupTableCell(packages: [Package], cellWidth: CGFloat) {
         self.packageData = packages.filter { $0.idDirumahAja }
         contentView.addSubview(dirumahAjaCollection)
         dirumahAjaCollectionSetup()
+        self.cellWidth = cellWidth
         self.selectionStyle = .none
         
         dirumahAjaCollection.delegate = self
@@ -54,11 +56,11 @@ class DirumahAjaTableCell: UITableViewCell {
 extension DirumahAjaTableCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: -15, left: 16, bottom: 0, right: 0)
+        return UIEdgeInsets(top: -8, left: 16, bottom: 8, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: dirumahAjaCollection.frame.width / 1.6, height: dirumahAjaCollection.frame.height / 1.2)
+        return CGSize(width: cellWidth, height: cellWidth / 2.1)
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
