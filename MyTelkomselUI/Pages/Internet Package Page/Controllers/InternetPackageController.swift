@@ -33,16 +33,12 @@ class InternetPackageController: UIViewController{
     let headerTitles = ["Langganan Kamu", "Popular", "Cari Voucher, Yuk!", "Belajar #dirumahaja"]
     var packageData: [Package] = []
     var delegate: InternetPackageControllerDelegate?
-    var deviceModel: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Internet Packages"
         self.navigationItem.backButtonDisplayMode = .minimal
         navigationController?.navigationBar.prefersLargeTitles = true
-
-        deviceModel = modelIdentifier()
-        print("device model: \(deviceModel)")
         delegate = self
         packageSeeder()
         setupCell()
@@ -60,13 +56,6 @@ class InternetPackageController: UIViewController{
         internetPackageTable.delegate = self
         internetPackageTable.dataSource = self
         internetPackageTable.backgroundColor = .white
-    }
-
-    func modelIdentifier() -> String {
-        if let simulatorModelIdentifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] { return simulatorModelIdentifier }
-        var sysinfo = utsname()
-        uname(&sysinfo) // ignore return value
-        return String(bytes: Data(bytes: &sysinfo.machine, count: Int(_SYS_NAMELEN)), encoding: .ascii)!.trimmingCharacters(in: .controlCharacters)
     }
 
 }

@@ -86,7 +86,6 @@ extension PackageDetailController: UITableViewDataSource, UITableViewDelegate {
         let section = DetailSections(rawValue: indexPath.section)
         
         guard let unwrappedPackage = self.package else { return UITableViewCell() }
-       // print(unwrappedPackage)
         
         switch section {
         case .harga:

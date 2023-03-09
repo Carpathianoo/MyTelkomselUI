@@ -64,7 +64,6 @@ extension LanggananTableCell: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        print("cellHeight: \(langgananCollection.frame.height / 1.2)")
         return CGSize(width: cellWidth, height: cellWidth / 2.1)
     }
     
